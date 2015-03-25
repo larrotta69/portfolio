@@ -11,7 +11,14 @@
     "react": "^0.13.1",
     "reactify": "^1.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-concat": "^2.5.2",
+    "gulp-if": "^1.2.5",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-sass": "^1.3.3",
+    "gulp-webserver": "^0.9.0",
+    "jquery-browserify": "^1.8.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
