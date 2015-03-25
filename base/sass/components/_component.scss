@@ -1,3 +1,12 @@
-body{
-	color: black;
+.complete_width{
+	max-width: initial;
+	background: beige;
+	text-align: center;
+	.img_container{
+		overflow: hidden;
+		img{
+			width: 40%;
+		}
+	}
 }
+

@@ -1,3 +1,11 @@
 /* line 1, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
-body {
-  color: black; }
+.complete_width {
+  max-width: initial;
+  background: beige;
+  text-align: center; }
+  /* line 5, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+  .complete_width .img_container {
+    overflow: hidden; }
+    /* line 7, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+    .complete_width .img_container img {
+      width: 40%; }
