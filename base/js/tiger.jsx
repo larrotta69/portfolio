@@ -7,8 +7,8 @@ var Tiger = React.createClass({
 				<figure className="img_container" data-sr="spin 180deg">
 					<img src="app/img/tigre.png"/>	
 				</figure>
-				<h2>Lorem Ipsum</h2>
-				<h2>Lorem Ipsum Lorem Ipsum</h2>
+				<h2 className="text_white">Lorem Ipsum</h2>
+				<h2 className="text_white">Lorem Ipsum Lorem Ipsum</h2>
 			</section>
 		);
 	}	

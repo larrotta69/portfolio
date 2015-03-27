@@ -1,6 +1,27 @@
+$emerald_green_base: #50e3c2;
+$emerald_green_light: #73FFE0;
+$emerald_green_dark: #26967D;
+$gray: #5E737D;
+
+.contain-to-grid{
+	background:$gray;
+	border-bottom: 2px solid $emerald_green_dark;
+	.top-bar{
+		background:$gray;
+	}
+}
+.text_white{
+	color: white;
+}
+.text_dark_green{
+	color: $emerald_green_dark;
+}
+.text_light_green{
+	color: $emerald_green_light;
+}
 .complete_width{
 	max-width: initial;
-	background: beige;
+	background: $emerald_green_base;
 	text-align: center;
 	.img_container{
 		overflow: hidden;

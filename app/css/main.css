@@ -1,11 +1,31 @@
-/* line 1, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 6, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+.contain-to-grid {
+  background: #5E737D;
+  border-bottom: 2px solid #26967D; }
+  /* line 9, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+  .contain-to-grid .top-bar {
+    background: #5E737D; }
+
+/* line 13, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+.text_white {
+  color: white; }
+
+/* line 16, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+.text_dark_green {
+  color: #26967D; }
+
+/* line 19, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+.text_light_green {
+  color: #73FFE0; }
+
+/* line 22, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
 .complete_width {
   max-width: initial;
-  background: beige;
+  background: #50e3c2;
   text-align: center; }
-  /* line 5, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+  /* line 26, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
   .complete_width .img_container {
     overflow: hidden; }
-    /* line 7, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+    /* line 28, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
     .complete_width .img_container img {
       width: 40%; }

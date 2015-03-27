@@ -5,7 +5,6 @@ var Me = React.createClass({
 		return ( 
 			<section className="row cust_me">
 				<div className="column medium-6 text-left" data-sr="enter top">
-					<h3>Who I am</h3>
 					<p>
 						Lorem ipsum dolor sit amet, 
 						consectetuer adipiscing elit. Donec odio. 
@@ -15,7 +14,6 @@ var Me = React.createClass({
 					</p>
 				</div>
 				<div className="column medium-6 text-left" data-sr="flip 45deg">
-					<h3>What I do</h3>
 					<p>
 						Lorem ipsum dolor sit amet, 
 						consectetuer adipiscing elit. Donec odio. 
