@@ -1,26 +1,20 @@
 var React = require('react');
 
-var Projects = React.createClass({
+var MiniProjects = React.createClass({
 	render: function(){
 		
 		return (
-			<section className="row cust_project"> 
-				{this.props.contents.map(function(content){
+			<section className="row cust_miniproject" data-sr='enter bottom and move 50px and scale up 50% over 1.33s'> 
+				{this.props.projects.map(function(project){
 
 					return (
-						<article className="medium-12 column">
-
-							<figure className="medium-8 column">
-								<img className="cust_project_img" src=""/>
-							</figure>
-							<div className="medium-4 column">
-								<h4>Client:</h4>
-								<h2>{content.name}</h2>
-								<h4>Project:</h4>
-								<p>{content.info}</p>
+						<div className="medium-3 column text-center" key={project.name}>
+							<div className="circle">
+								<div className="circle_mini">
+									<h4>Text</h4>
+								</div>
 							</div>
-
-						</article>
+						</div>
 					);
 				})}
 			</section>
@@ -28,7 +22,7 @@ var Projects = React.createClass({
 	}	
 });
 
-module.exports = Projects;
+module.exports = MiniProjects;
 
 
 

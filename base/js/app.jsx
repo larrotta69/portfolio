@@ -1,5 +1,6 @@
 var React = require('react');
 var Header = require('./header.jsx');
+var Footer = require('./footer.jsx');
 var Tiger = require('./tiger.jsx');
 var Me = require('./me.jsx');
 var Divider = require('./divider.jsx');
@@ -12,19 +13,25 @@ var App = React.createClass({
 			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'},
 			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'}
 		];
+		var objMiniProjects = [
+			{name: 'Project 1', info: ''},
+			{name: 'Project 2', info: ''},
+			{name: 'Project 3', info: ''},
+			{name: 'Project 4', info: ''}
+		];
 		return ( 
 			<div className="wrapper">
-				<Header/>
-				<Tiger/>
+				<Header />
+				<Tiger />
 
 				<Divider text="Who I am"/>
 				<Me/>
 
 				<Divider text="Projects"/>
 				<Projects contents={objProjects} />
-				<ProjectsMini />
+				<ProjectsMini projects={objMiniProjects} />
 
-
+				<Footer />
 			</div>
 
 			

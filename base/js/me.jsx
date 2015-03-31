@@ -3,8 +3,8 @@ var React = require('react');
 var Me = React.createClass({
 	render: function(){
 		return ( 
-			<section className="row cust_me">
-				<div className="column medium-6 text-left" data-sr="enter top">
+			<section className="row cust_me" >
+				<div className="column medium-6 text-left">
 					<p>
 						Lorem ipsum dolor sit amet, 
 						consectetuer adipiscing elit. Donec odio. 
@@ -13,7 +13,7 @@ var Me = React.createClass({
 						viverra non, semper suscipit, posuere a, pede.
 					</p>
 				</div>
-				<div className="column medium-6 text-left" data-sr="flip 45deg">
+				<div className="column medium-6 text-left">
 					<p>
 						Lorem ipsum dolor sit amet, 
 						consectetuer adipiscing elit. Donec odio. 

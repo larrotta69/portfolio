@@ -2,14 +2,22 @@ var React = require('react');
 
 var Tiger = React.createClass({
 	render: function(){
+
 		return ( 
-			<section className="row complete_width cust_tiger">
-				<figure className="img_container" data-sr="spin 180deg">
-					<img src="app/img/tigre.png"/>	
-				</figure>
-				<h2 className="text_white">Lorem Ipsum</h2>
-				<h2 className="text_white">Lorem Ipsum Lorem Ipsum</h2>
-			</section>
+			<div>
+				<section className="row complete_width cust_tiger">
+					<div className="cust_tiger_div">	
+						<figure className="img_container" data-anchor-target=".cust_tiger_div" data-start="top: 70px; left: 0%;" data-top-bottom="top: 10px; left: -88%;">
+							<img src="app/img/tigre.png"  data-anchor-target=".cust_tiger_div" data-start="width: 40%" data-top-bottom="width: 10%"/>	
+						</figure>
+					</div>
+					
+				</section>
+				<div className="cust_tiger_text text-center">
+					<h2 className="text_gray_dark"><strong>Lorem Ipsum</strong></h2>
+					<h2 className="text_gray_dark"><strong>Lorem Ipsum Lorem Ipsum</strong></h2>
+				</div>
+			</div>
 		);
 	}	
 });

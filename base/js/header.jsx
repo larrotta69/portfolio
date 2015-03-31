@@ -18,7 +18,7 @@ var Header = React.createClass({
 						<li className="name">
 							<hgroup >
 								<h1 className="site-title">
-									<a href="#">Daniel Larrotta - Front End developer</a>
+									<a href="#"><strong>Daniel Larrotta</strong> Front End developer</a>
 								</h1>
 							</hgroup>
 							{/*
