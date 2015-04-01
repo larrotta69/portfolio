@@ -1,6 +1,8 @@
 var React = require('react');
 var $ = require('jquery-browserify');
+
 var foundation = require('./foundation.min.js');
+var velocity = require('./vendor/velocity.min.js');
 var sr = require('./vendor/scrollReveal.min.js');
 var skrollr = require('./vendor/skrollr.min.js');
 
@@ -17,6 +19,8 @@ window.sr = new scrollReveal({
     mobile: true
 });
 var s = skrollr.init();
-console.log(s);
+//console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
+
+
 

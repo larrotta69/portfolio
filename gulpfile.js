@@ -38,6 +38,7 @@ gulp.task('template', function(){
 
 gulp.task('todo', function(){
   	gulp.watch('./base/js/*.jsx', ['template']),
+  	gulp.watch('./base/js/*.js', ['template']),
   	gulp.watch('./base/sass/components/*.scss', ['styles']);
 });
 
