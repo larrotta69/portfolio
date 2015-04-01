@@ -31,6 +31,7 @@ body{
 	text-align: center;
 }
 
+
 .circle{
 	width: 100px;
 	height: 100px;
@@ -52,39 +53,13 @@ body{
 
 .divider{
 	margin-top: 30px;
+	padding: 30px 0 0 0;
+	margin-bottom: 20px;
 	h2{
 		line-height: 1.2;
 		margin: 0;	
+		color: $emerald_green_base;
 	}
 }
 
 
-.cust_footer{
-	background: $gray;
-	border-top: 5px solid $emerald_green_dark;
-	height: 2.8125rem;
-	position: relative;
-	.social{
-		list-style: none;
-		overflow: hidden;
-		li{
-			svg{
-				width: 50px;
-				height: 50px;
-				text-align: left;
-				position: relative;
-				z-index: 999;
-			}
-		}
-	}
-	.cust_pant_div{
-		position: absolute;
-		bottom: 0px;
-		right: 1%;
-		text-align: right;
-		width: 100%;
-		img{
-			width: 15%;
-		}		
-	}
-}

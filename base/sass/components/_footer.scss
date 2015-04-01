@@ -1,0 +1,37 @@
+.cust_footer{
+	background: $gray;
+	border-top: 5px solid $emerald_green_dark;
+	height: 2.8125rem;
+	position: relative;
+	margin-top: 70px;
+	.social{
+		list-style: none;
+		overflow: hidden;
+		margin: 0;
+		padding: 5px 0;
+		.social_item{
+			float: left;
+			margin-right: 10px;
+			img{
+				width: 30px;
+			}
+			&.behance{
+				img{
+					width: 35px;
+					margin-top: -3px;
+				}
+			}
+		}
+	}
+	.cust_pant_div{
+		position: absolute;
+		bottom: 0px;
+		right: 1px;
+		img{
+			width: 25%;
+		}		
+	}
+}
+
+
+

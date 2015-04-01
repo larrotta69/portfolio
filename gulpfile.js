@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	concat  = require('gulp-concat'),
 	webserver = require('gulp-webserver'),
 	browserify  = require('gulp-browserify'),
+	reactify  = require('reactify'),
 	gulpif  = require('gulp-if');
 
 var env = 'development';
@@ -25,14 +26,20 @@ gulp.task('styles', function () {
 		.pipe( gulp.dest(sassOut) );
 });
 
-gulp.task('webserver', function() {
-	gulp.src('porfolio')
-	.pipe(webserver({
-		directoryListing: true,
-		open: true,
-		fallback: 'index.html'
-	}));
+gulp.task('template', function(){
+	return gulp.src('./base/js/main.jsx')
+	.pipe(browserify({
+      transform: [reactify]
+    }))
+    .pipe(rename('main.js'))
+    .pipe(gulp.dest('./app/js/'));
+    ;
 });
 
-gulp.task('default', ['styles']);
+gulp.task('todo', function(){
+  	gulp.watch('./base/js/*.jsx', ['template']),
+  	gulp.watch('./base/sass/components/*.scss', ['styles']);
+});
+
+gulp.task('default', ['styles', 'template']);
 		
