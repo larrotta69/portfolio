@@ -27,7 +27,7 @@ var Footer = React.createClass({
 					</ul>
 				</div>
 				<div className="column small-6 text-right cust_pant_div">	
-					<img src="app/img/pantera.png"  />	
+					<img src="app/img/pantera-small.png"  />	
 				</div>
 
 			</footer>

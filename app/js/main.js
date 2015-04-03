@@ -172,7 +172,7 @@ var Footer = React.createClass({displayName: "Footer",
 					)
 				), 
 				React.createElement("div", {className: "column small-6 text-right cust_pant_div"}, 	
-					React.createElement("img", {src: "app/img/pantera.png"})	
+					React.createElement("img", {src: "app/img/pantera-small.png"})	
 				)
 
 			)
@@ -6511,7 +6511,7 @@ var Tiger = React.createClass({displayName: "Tiger",
 				React.createElement("section", {className: "row complete_width cust_tiger"}, 
 					React.createElement("div", {className: "cust_tiger_div"}, 	
 						React.createElement("figure", {className: "img_container", "data-anchor-target": ".cust_tiger_div", "data-start": "top: 70px; left: 0%;", "data-top-bottom": "top: 10px; left: -88%;"}, 
-							React.createElement("img", {src: "app/img/tigre.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
+							React.createElement("img", {src: "app/img/tigre_web.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
 						)
 					)
 					
