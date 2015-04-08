@@ -42,22 +42,24 @@ var App = React.createClass({displayName: "App",
 		return ( 
 			React.createElement("div", {className: "wrapper"}, 
 				React.createElement(Header, null), 
-				React.createElement(Tiger, null), 
+				React.createElement("div", {id: "skrollr-body"}, 
+					React.createElement(Tiger, null), 
 
-				React.createElement(Divider, {text: "Who I am"}), 
-				React.createElement(Me, null), 
+					React.createElement(Divider, {text: "Who I am"}), 
+					React.createElement(Me, null), 
 
-				React.createElement(Divider, {text: "Projects"}), 
-				React.createElement(Projects, {contents: objProjects}), 
-				React.createElement(ProjectsMini, {projects: objMiniProjects}), 
+					React.createElement(Divider, {text: "Projects"}), 
+					React.createElement(Projects, {contents: objProjects}), 
+					React.createElement(ProjectsMini, {projects: objMiniProjects}), 
 
-				React.createElement(Divider, {text: "Skills"}), 
-				React.createElement(Skills, {skills: objSkills}), 
+					React.createElement(Divider, {text: "Skills"}), 
+					React.createElement(Skills, {skills: objSkills}), 
 
-				React.createElement(Divider, {text: "Back-end integration experience"}), 
-				React.createElement(Back, {techs: objBackTechs}), 
+					React.createElement(Divider, {text: "Back-end integration experience"}), 
+					React.createElement(Back, {techs: objBackTechs}), 
 
-				React.createElement(Footer, null)
+					React.createElement(Footer, null)
+				)
 			)
 
 		);
@@ -131,6 +133,7 @@ var App = require('./app.jsx');
 React.render(React.createElement(App, null), document.getElementById('main'));
 
 $(document).foundation();
+<<<<<<< HEAD
 window.sr = new scrollReveal({
 	mobile: true
 });
@@ -139,6 +142,10 @@ if (window.innerWidth >= 600 ){
 	var s = skrollr.init();	
 }
 
+=======
+window.sr = new scrollReveal({});
+var s = skrollr.init();
+>>>>>>> 586d3a4d2fb1bb750917328c8451bc036ebc2c51
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
 

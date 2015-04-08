@@ -19,7 +19,6 @@ $(document).foundation();
 window.sr = new scrollReveal({
 	mobile: true
 });
-
 if (window.innerWidth >= 600 ){
 	var s = skrollr.init();	
 }
