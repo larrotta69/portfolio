@@ -1,4 +1,4 @@
-body{
+body, .wrapper{
 	overflow-x: hidden;
 }
 .contain-to-grid{
@@ -7,6 +7,9 @@ body{
 	z-index: 10;
 	.top-bar{
 		background:$gray;
+		.name h1 a{
+			width: 100%;
+		}
 	}
 }
 

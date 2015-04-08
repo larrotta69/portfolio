@@ -24,7 +24,7 @@ Skill.prototype.init = function(){
 
 	$(window).scroll(function () {
 		if (self.isScrolledIntoView('.HTML5'))
-			$(".cust_skill").velocity({ backgroundColor: '#444' }, 1000);	
+			$(".cust_skill").velocity({ backgroundColor: '#50e3c2', color: '#fff' }, 1000);	
 
 	});
 	

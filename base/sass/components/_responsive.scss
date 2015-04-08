@@ -1,21 +1,32 @@
+/*@group tablet*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
 	.cust_tiger{
 		height: 46vh;
 	}
 }
-/**/
+/*@end tablet*/
+
+/*@group mobile*/
 @media only screen and (max-width: 40em) {
 	.cust_tiger{
 		height: 20vh;
-		.img_container img{
-			min-width: 20%;
+		.img_container{
+			top: 10px;
+			position: relative;
+			z-index: 1;			
+			img{
+				min-width: 20%;
+			}
 		}
 	}
 	.top-bar{
 		.name{
 			height: 4.8125rem;
 		}
-
+		.title-area{
+			float: none;		
+		}
 	}
 }
 
+/*@end mobile*/

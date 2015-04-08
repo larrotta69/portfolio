@@ -60,7 +60,6 @@ var App = React.createClass({displayName: "App",
 				React.createElement(Footer, null)
 			)
 
-			
 		);
 	}	
 });
@@ -130,11 +129,16 @@ var App = require('./app.jsx');
 
 
 React.render(React.createElement(App, null), document.getElementById('main'));
+
 $(document).foundation();
 window.sr = new scrollReveal({
-    mobile: true
+	mobile: true
 });
-var s = skrollr.init();
+
+if (window.innerWidth >= 600 ){
+	var s = skrollr.init();	
+}
+
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
 
@@ -6454,7 +6458,7 @@ Skill.prototype.init = function(){
 
 	$(window).scroll(function () {
 		if (self.isScrolledIntoView('.HTML5'))
-			$(".cust_skill").velocity({ backgroundColor: '#444' }, 1000);	
+			$(".cust_skill").velocity({ backgroundColor: '#50e3c2', color: '#fff' }, 1000);	
 
 	});
 	
@@ -6505,14 +6509,31 @@ var React = require('react');
 
 var Tiger = React.createClass({displayName: "Tiger",
 	render: function(){
+		var optionalElement;
+
+	    if (window.innerWidth >= 600 ) {
+	        optionalElement = (
+	        	React.createElement("figure", {className: "img_container", "data-anchor-target": ".cust_tiger_div", "data-start": "top: 70px; left: 0%;", "data-top-bottom": "top: 10px; left: -88%;"}, 
+					React.createElement("img", {src: "app/img/tigre_web.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
+				)
+			);
+	        
+	    }
+	    else{
+	        optionalElement = (
+	        	React.createElement("figure", {className: "img_container"}, 
+					React.createElement("img", {src: "app/img/tigre_web.png"})	
+				)
+			);
+	    }
 
 		return ( 
+
+
 			React.createElement("div", null, 
 				React.createElement("section", {className: "row complete_width cust_tiger"}, 
 					React.createElement("div", {className: "cust_tiger_div"}, 	
-						React.createElement("figure", {className: "img_container", "data-anchor-target": ".cust_tiger_div", "data-start": "top: 70px; left: 0%;", "data-top-bottom": "top: 10px; left: -88%;"}, 
-							React.createElement("img", {src: "app/img/tigre_web.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
-						)
+						optionalElement
 					)
 					
 				), 
