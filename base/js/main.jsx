@@ -15,9 +15,7 @@ var App = require('./app.jsx');
 
 React.render(<App/>, document.getElementById('main'));
 $(document).foundation();
-window.sr = new scrollReveal({
-    mobile: true
-});
+window.sr = new scrollReveal({});
 var s = skrollr.init();
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));

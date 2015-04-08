@@ -41,22 +41,24 @@ var App = React.createClass({
 		return ( 
 			<div className="wrapper">
 				<Header />
-				<Tiger />
+				<div id="skrollr-body">
+					<Tiger />
 
-				<Divider text="Who I am"/>
-				<Me/>
+					<Divider text="Who I am"/>
+					<Me/>
 
-				<Divider text="Projects"/>
-				<Projects contents={objProjects} />
-				<ProjectsMini projects={objMiniProjects} />
+					<Divider text="Projects"/>
+					<Projects contents={objProjects} />
+					<ProjectsMini projects={objMiniProjects} />
 
-				<Divider text="Skills"/>
-				<Skills skills={objSkills}/>
+					<Divider text="Skills"/>
+					<Skills skills={objSkills}/>
 
-				<Divider text="Back-end integration experience"/>
-				<Back techs={objBackTechs}/>
+					<Divider text="Back-end integration experience"/>
+					<Back techs={objBackTechs}/>
 
-				<Footer />
+					<Footer />
+				</div>
 			</div>
 
 			
