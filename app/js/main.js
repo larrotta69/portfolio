@@ -133,21 +133,18 @@ var App = require('./app.jsx');
 React.render(React.createElement(App, null), document.getElementById('main'));
 
 $(document).foundation();
-<<<<<<< HEAD
 window.sr = new scrollReveal({
 	mobile: true
 });
-
 if (window.innerWidth >= 600 ){
 	var s = skrollr.init();	
 }
 
-=======
-window.sr = new scrollReveal({});
-var s = skrollr.init();
->>>>>>> 586d3a4d2fb1bb750917328c8451bc036ebc2c51
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
+
+
+
 
 
 
