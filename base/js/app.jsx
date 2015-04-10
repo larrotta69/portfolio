@@ -12,8 +12,8 @@ var Back = require('./back.jsx');
 var App = React.createClass({
 	render: function(){
 		var objProjects = [
-			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'},
-			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'}
+			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'apptiempo.jpg'},
+			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'appchevrolet.jpg'}
 		];
 		var objMiniProjects = [
 			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet'},

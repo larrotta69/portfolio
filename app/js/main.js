@@ -13,8 +13,8 @@ var Back = require('./back.jsx');
 var App = React.createClass({displayName: "App",
 	render: function(){
 		var objProjects = [
-			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'},
-			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.'}
+			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'apptiempo.jpg'},
+			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'appchevrolet.jpg'}
 		];
 		var objMiniProjects = [
 			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet'},
@@ -78,7 +78,7 @@ var Back = React.createClass({displayName: "Back",
 				this.props.techs.map(function(tech){
 
 					return (
-						React.createElement("div", {className: "medium-3 column text-center", key: tech.name}, 
+						React.createElement("div", {className: "small-6 medium-3 column text-center", key: tech.name}, 
 							React.createElement("h4", null, tech.name), 
 							React.createElement("p", null, tech.info)
 						)
@@ -142,12 +142,6 @@ if (window.innerWidth >= 600 ){
 
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
-
-
-
-
-
-
 
 
 },{"./app.jsx":1,"./foundation.min.js":6,"./vendor/scrollReveal.min.js":14,"./vendor/skrollr.min.js":15,"./vendor/velocity.min.js":16,"jquery-browserify":18,"react":173}],5:[function(require,module,exports){
@@ -6378,11 +6372,9 @@ var MiniProjects = React.createClass({displayName: "MiniProjects",
 				this.props.projects.map(function(project){
 
 					return (
-						React.createElement("div", {className: "medium-3 column text-center", key: project.name}, 
+						React.createElement("div", {className: "small-6 medium-3 column text-center", key: project.name}, 
 							React.createElement("div", {className: "circle"}, 
-								React.createElement("div", {className: "circle_mini"}, 
-									React.createElement("h4", null, "Text")
-								)
+								React.createElement("h4", null, "Text")
 							)
 						)
 					);
@@ -6405,15 +6397,18 @@ var Projects = React.createClass({displayName: "Projects",
 	render: function(){
 		
 		return (
-			React.createElement("section", {className: "row cust_project", "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
+			React.createElement("section", {className: "row cust_project"}, 
 				this.props.contents.map(function(content){
 
 					return (
-						React.createElement("article", {className: "medium-12 column", key: content.name}, 
+						React.createElement("article", {className: "medium-12 column", key: content.name, "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
 
-							React.createElement("figure", {className: "medium-8 column"}, 
-								React.createElement("img", {className: "cust_project_img", src: ""})
+							React.createElement("div", {className: "medium-8 column"}, 
+								React.createElement("figure", null, 
+									React.createElement("img", {className: "cust_project_img", src: "app/img/projects/"+content.img})
+								)
 							), 
+							
 							React.createElement("div", {className: "medium-4 column"}, 
 								React.createElement("h4", null, "Client:"), 
 								React.createElement("h2", null, content.name), 
@@ -6457,12 +6452,21 @@ Skill.prototype.isScrolledIntoView = function(elem){
 
 
 Skill.prototype.init = function(){
-	console.log ( $('body') );
 	var self = this;
 
 	$(window).scroll(function () {
-		if (self.isScrolledIntoView('.HTML5'))
-			$(".cust_skill").velocity({ backgroundColor: '#50e3c2', color: '#fff' }, 1000);	
+		if (self.isScrolledIntoView('.cust_skill_0')){
+			$(".cust_skill_0 .animation_cust_skills").velocity({ left: '90%' }, 1000);
+			$(".cust_skill_1 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_2 .animation_cust_skills").velocity({ left: '95%' }, 1000);
+			$(".cust_skill_3 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_4 .animation_cust_skills").velocity({ left: '70%' }, 1000);
+			$(".cust_skill_5 .animation_cust_skills").velocity({ left: '85%' }, 1000);
+			$(".cust_skill_6 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_7 .animation_cust_skills").velocity({ left: '95%' }, 1000);
+			$(".cust_skill_8 .animation_cust_skills").velocity({ left: '85%' }, 1000);
+		}
+			
 
 	});
 	
@@ -6486,14 +6490,24 @@ var Skills = React.createClass({displayName: "Skills",
 	render: function(){
 		return ( 
 			React.createElement("section", {className: "row cust_skills", "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
-				this.props.skills.map(function(skill){
+				React.createElement("div", {className: "medium-6 column right"}, 
+					React.createElement("div", {className: "skills_grid"}, 
+						React.createElement("span", {className: "axis axis_0"}), 
+						React.createElement("span", {className: "axis axis_1"}), 
+						React.createElement("span", {className: "axis axis_2"}), 
+						React.createElement("span", {className: "axis axis_3"}), 
+						React.createElement("span", {className: "axis axis_4"})
+					), 
+					this.props.skills.map(function(skill, index){
 
-					return (
-						React.createElement("div", {className: "cust_skill medium-4 column text-center " + skill.name, key: skill.name}, 
-							React.createElement("h4", null, skill.name)
-						)
-					);
-				})
+						return (
+							React.createElement("div", {className: "cust_skill medium-12 column text-center cust_skill_" + index, key: skill.name}, 
+								React.createElement("div", {className: "animation_cust_skills"}), 
+								React.createElement("h4", null, skill.name)
+							)
+						);
+					})
+				)
 			)
 		);
 	}	
@@ -6518,7 +6532,7 @@ var Tiger = React.createClass({displayName: "Tiger",
 	    if (window.innerWidth >= 600 ) {
 	        optionalElement = (
 	        	React.createElement("figure", {className: "img_container", "data-anchor-target": ".cust_tiger_div", "data-start": "top: 70px; left: 0%;", "data-top-bottom": "top: 10px; left: -88%;"}, 
-					React.createElement("img", {src: "app/img/tigre_web.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
+					React.createElement("img", {src: "app/img/tigre_50.png", "data-anchor-target": ".cust_tiger_div", "data-start": "width: 40%", "data-top-bottom": "width: 10%"})	
 				)
 			);
 	        
@@ -6526,7 +6540,7 @@ var Tiger = React.createClass({displayName: "Tiger",
 	    else{
 	        optionalElement = (
 	        	React.createElement("figure", {className: "img_container"}, 
-					React.createElement("img", {src: "app/img/tigre_web.png"})	
+					React.createElement("img", {src: "app/img/tigre_50.png"})	
 				)
 			);
 	    }

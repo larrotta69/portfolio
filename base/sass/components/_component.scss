@@ -5,6 +5,9 @@ body, .wrapper{
 	background:$gray;
 	border-bottom: 5px solid $emerald_green_dark;
 	z-index: 10;
+	-webkit-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.25);
 	.top-bar{
 		background:$gray;
 		.name h1 a{
@@ -39,9 +42,14 @@ body, .wrapper{
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	background: $emerald_green_light;
+	background: $gray;
 	margin: 0 auto;
-	position: relative;
+	border: 5px solid $emerald_green_light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
 }
 .circle_mini{
 	background: $gray;

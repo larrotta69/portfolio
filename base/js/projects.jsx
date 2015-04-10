@@ -4,15 +4,18 @@ var Projects = React.createClass({
 	render: function(){
 		
 		return (
-			<section className="row cust_project" data-sr='enter bottom and move 50px and scale up 50% over 1.33s'> 
+			<section className="row cust_project"> 
 				{this.props.contents.map(function(content){
 
 					return (
-						<article className="medium-12 column" key={content.name}>
+						<article className="medium-12 column" key={content.name}  data-sr='enter bottom and move 50px and scale up 50% over 1.33s'>
 
-							<figure className="medium-8 column">
-								<img className="cust_project_img" src=""/>
-							</figure>
+							<div className="medium-8 column">
+								<figure>
+									<img className="cust_project_img" src={"app/img/projects/"+content.img}/>
+								</figure>
+							</div>
+							
 							<div className="medium-4 column">
 								<h4>Client:</h4>
 								<h2>{content.name}</h2>

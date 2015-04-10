@@ -8,11 +8,9 @@ var MiniProjects = React.createClass({
 				{this.props.projects.map(function(project){
 
 					return (
-						<div className="medium-3 column text-center" key={project.name}>
+						<div className="small-6 medium-3 column text-center" key={project.name}>
 							<div className="circle">
-								<div className="circle_mini">
-									<h4>Text</h4>
-								</div>
+								<h4>Text</h4>
 							</div>
 						</div>
 					);

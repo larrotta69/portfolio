@@ -25,9 +25,3 @@ if (window.innerWidth >= 600 ){
 
 //console.log(s);
 //React.render(<Tiger/>, document.getElementById('main'));
-
-
-
-
-
-

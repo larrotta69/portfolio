@@ -19,12 +19,21 @@ Skill.prototype.isScrolledIntoView = function(elem){
 
 
 Skill.prototype.init = function(){
-	console.log ( $('body') );
 	var self = this;
 
 	$(window).scroll(function () {
-		if (self.isScrolledIntoView('.HTML5'))
-			$(".cust_skill").velocity({ backgroundColor: '#50e3c2', color: '#fff' }, 1000);	
+		if (self.isScrolledIntoView('.cust_skill_0')){
+			$(".cust_skill_0 .animation_cust_skills").velocity({ left: '90%' }, 1000);
+			$(".cust_skill_1 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_2 .animation_cust_skills").velocity({ left: '95%' }, 1000);
+			$(".cust_skill_3 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_4 .animation_cust_skills").velocity({ left: '70%' }, 1000);
+			$(".cust_skill_5 .animation_cust_skills").velocity({ left: '85%' }, 1000);
+			$(".cust_skill_6 .animation_cust_skills").velocity({ left: '80%' }, 1000);
+			$(".cust_skill_7 .animation_cust_skills").velocity({ left: '95%' }, 1000);
+			$(".cust_skill_8 .animation_cust_skills").velocity({ left: '85%' }, 1000);
+		}
+			
 
 	});
 	

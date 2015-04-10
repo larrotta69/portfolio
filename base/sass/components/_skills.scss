@@ -1,0 +1,78 @@
+.cust_skills{
+	
+	> .column{
+		padding: 0;	
+	}
+	.cust_skill{
+		position: relative;
+		border-bottom: 1px solid white;
+		background: $emerald_green_base;
+		.animation_cust_skills{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-color: white;
+		}
+		h4{
+			position: relative;
+			color: white;
+		}
+	}
+}
+
+.skills_grid{
+
+	.axis{
+		width: 1px;
+		border-right: 1px dashed #909090;
+		position: absolute;
+		top: -5px;
+		bottom: -5px;
+		z-index: 9;
+		opacity: 0.3;
+		&.axis_0{
+			left: 0;
+			&:after{
+				content: '0%';
+				left: 2px;
+			}
+		}
+		&.axis_1{
+			left: 25%;
+			&:after{
+				content: '25%';
+			}
+		}
+		&.axis_2{
+			left: 50%;
+			&:after{
+				content: '50%';
+			}
+		}
+		&.axis_3{
+			left: 75%;
+			&:after{
+				content: '75%';
+			}
+		}
+		&.axis_4{
+			left: 100%;
+			&:after{
+				content: '100%';
+				left: -28px;
+			}
+		}
+		&:after{
+			color: #909090;
+			position: absolute;
+			left: -7px;
+			top: -13px;
+			font-size: 10px;	
+		}
+		
+	}
+}
+
+

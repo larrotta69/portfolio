@@ -7,7 +7,7 @@ var Back = React.createClass({
 				{this.props.techs.map(function(tech){
 
 					return (
-						<div className="medium-3 column text-center" key={tech.name}>
+						<div className="small-6 medium-3 column text-center" key={tech.name}>
 							<h4>{tech.name}</h4>
 							<p>{tech.info}</p>
 						</div>

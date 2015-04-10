@@ -1,54 +1,60 @@
-/* line 1, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 1, c:/portfolio/base/sass/components/_component.scss */
 body, .wrapper {
   overflow-x: hidden; }
 
-/* line 4, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 4, c:/portfolio/base/sass/components/_component.scss */
 .contain-to-grid {
   background: #5E737D;
   border-bottom: 5px solid #26967D;
-  z-index: 10; }
-  /* line 8, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+  z-index: 10;
+  -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25); }
+  /* line 11, c:/portfolio/base/sass/components/_component.scss */
   .contain-to-grid .top-bar {
     background: #5E737D; }
-    /* line 10, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+    /* line 13, c:/portfolio/base/sass/components/_component.scss */
     .contain-to-grid .top-bar .name h1 a {
       width: 100%; }
 
-/* line 16, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 19, c:/portfolio/base/sass/components/_component.scss */
 .text_white {
   color: white; }
 
-/* line 19, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 22, c:/portfolio/base/sass/components/_component.scss */
 .text_gray {
   color: #5E737D; }
 
-/* line 22, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 25, c:/portfolio/base/sass/components/_component.scss */
 .text_gray_dark {
   color: #222; }
 
-/* line 25, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 28, c:/portfolio/base/sass/components/_component.scss */
 .text_dark_green {
   color: #26967D; }
 
-/* line 28, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 31, c:/portfolio/base/sass/components/_component.scss */
 .text_light_green {
   color: #73FFE0; }
 
-/* line 32, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 35, c:/portfolio/base/sass/components/_component.scss */
 .complete_width {
   max-width: initial;
   text-align: center; }
 
-/* line 38, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 41, c:/portfolio/base/sass/components/_component.scss */
 .circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #73FFE0;
+  background: #5E737D;
   margin: 0 auto;
-  position: relative; }
+  border: 5px solid #73FFE0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-/* line 46, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 54, c:/portfolio/base/sass/components/_component.scss */
 .circle_mini {
   background: #5E737D;
   position: absolute;
@@ -59,24 +65,24 @@ body, .wrapper {
   border-radius: 50%;
   padding: 37px 0; }
 
-/* line 57, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+/* line 65, c:/portfolio/base/sass/components/_component.scss */
 .divider {
   margin-top: 30px;
   padding: 30px 0 0 0;
   margin-bottom: 20px; }
-  /* line 61, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_component.scss */
+  /* line 69, c:/portfolio/base/sass/components/_component.scss */
   .divider h2 {
     line-height: 1.2;
     margin: 0;
     color: #50e3c2; }
 
-/* line 2, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_projects.scss */
+/* line 2, c:/portfolio/base/sass/components/_projects.scss */
 .cust_miniproject h4 {
   line-height: 1;
   color: white;
   margin: 0; }
 
-/* line 2, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+/* line 2, c:/portfolio/base/sass/components/_tiger.scss */
 .cust_tiger {
   background: #D4FDF4;
   padding: 15px;
@@ -85,86 +91,178 @@ body, .wrapper {
   display: flex;
   justify-content: center;
   align-items: flex-end; }
-  /* line 10, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+  /* line 10, c:/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger h2 {
     line-height: 1.2;
     margin: 0; }
-  /* line 15, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+  /* line 15, c:/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger .img_container {
     position: fixed;
     right: 0;
     z-index: 99;
     width: 100%;
     margin: 0 auto; }
-    /* line 21, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+    /* line 21, c:/portfolio/base/sass/components/_tiger.scss */
     .cust_tiger .img_container img {
       width: 40%; }
 
-/* line 26, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+/* line 26, c:/portfolio/base/sass/components/_tiger.scss */
 .cust_tiger_text {
   background: #D4FDF4; }
-  /* line 28, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_tiger.scss */
+  /* line 28, c:/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger_text h2 {
     margin: 0; }
 
-/* line 1, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+/* line 1, c:/portfolio/base/sass/components/_footer.scss */
 .cust_footer {
   background: #5E737D;
   border-top: 5px solid #26967D;
   height: 2.8125rem;
   position: relative;
   margin-top: 70px; }
-  /* line 7, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+  /* line 7, c:/portfolio/base/sass/components/_footer.scss */
   .cust_footer .social {
     list-style: none;
     overflow: hidden;
     margin: 0;
     padding: 5px 0; }
-    /* line 12, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+    /* line 12, c:/portfolio/base/sass/components/_footer.scss */
     .cust_footer .social .social_item {
       float: left;
       margin-right: 10px; }
-      /* line 15, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+      /* line 15, c:/portfolio/base/sass/components/_footer.scss */
       .cust_footer .social .social_item img {
         width: 30px; }
-      /* line 19, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+      /* line 19, c:/portfolio/base/sass/components/_footer.scss */
       .cust_footer .social .social_item.behance img {
         width: 35px;
         margin-top: -3px; }
-  /* line 26, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+  /* line 26, c:/portfolio/base/sass/components/_footer.scss */
   .cust_footer .cust_pant_div {
     position: absolute;
     bottom: 0px;
     right: 1px; }
-    /* line 30, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_footer.scss */
+    /* line 30, c:/portfolio/base/sass/components/_footer.scss */
     .cust_footer .cust_pant_div img {
       width: 25%; }
 
+/* line 3, c:/portfolio/base/sass/components/_skills.scss */
+.cust_skills > .column {
+  padding: 0; }
+/* line 6, c:/portfolio/base/sass/components/_skills.scss */
+.cust_skills .cust_skill {
+  position: relative;
+  border-bottom: 1px solid white;
+  background: #50e3c2; }
+  /* line 10, c:/portfolio/base/sass/components/_skills.scss */
+  .cust_skills .cust_skill .animation_cust_skills {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white; }
+  /* line 18, c:/portfolio/base/sass/components/_skills.scss */
+  .cust_skills .cust_skill h4 {
+    position: relative;
+    color: white; }
+
+/* line 27, c:/portfolio/base/sass/components/_skills.scss */
+.skills_grid .axis {
+  width: 1px;
+  border-right: 1px dashed #909090;
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  z-index: 9;
+  opacity: 0.3; }
+  /* line 35, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis.axis_0 {
+    left: 0; }
+    /* line 37, c:/portfolio/base/sass/components/_skills.scss */
+    .skills_grid .axis.axis_0:after {
+      content: '0%';
+      left: 2px; }
+  /* line 42, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis.axis_1 {
+    left: 25%; }
+    /* line 44, c:/portfolio/base/sass/components/_skills.scss */
+    .skills_grid .axis.axis_1:after {
+      content: '25%'; }
+  /* line 48, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis.axis_2 {
+    left: 50%; }
+    /* line 50, c:/portfolio/base/sass/components/_skills.scss */
+    .skills_grid .axis.axis_2:after {
+      content: '50%'; }
+  /* line 54, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis.axis_3 {
+    left: 75%; }
+    /* line 56, c:/portfolio/base/sass/components/_skills.scss */
+    .skills_grid .axis.axis_3:after {
+      content: '75%'; }
+  /* line 60, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis.axis_4 {
+    left: 100%; }
+    /* line 62, c:/portfolio/base/sass/components/_skills.scss */
+    .skills_grid .axis.axis_4:after {
+      content: '100%';
+      left: -28px; }
+  /* line 67, c:/portfolio/base/sass/components/_skills.scss */
+  .skills_grid .axis:after {
+    color: #909090;
+    position: absolute;
+    left: -7px;
+    top: -13px;
+    font-size: 10px; }
+
 /*@group tablet*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 3, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+  /* line 3, c:/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger {
     height: 46vh; } }
 
 /*@end tablet*/
 /*@group mobile*/
 @media only screen and (max-width: 40em) {
-  /* line 11, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+  /* line 11, c:/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger {
-    height: 20vh; }
-    /* line 13, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+    height: 45vh;
+    align-items: center; }
+    /* line 14, c:/portfolio/base/sass/components/_responsive.scss */
     .cust_tiger .img_container {
       top: 10px;
       position: relative;
       z-index: 1; }
-      /* line 17, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+      /* line 18, c:/portfolio/base/sass/components/_responsive.scss */
       .cust_tiger .img_container img {
-        min-width: 20%; }
-  /* line 23, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+        min-width: 20%;
+        width: 80%; }
+  /* line 24, c:/portfolio/base/sass/components/_responsive.scss */
+  .cust_tiger_text {
+    padding-bottom: 30px; }
+  /* line 28, c:/portfolio/base/sass/components/_responsive.scss */
   .top-bar .name {
     height: 4.8125rem; }
-  /* line 26, c:/Users/Nelson Larrota/Documents/lab/portfolio/base/sass/components/_responsive.scss */
+  /* line 31, c:/portfolio/base/sass/components/_responsive.scss */
   .top-bar .title-area {
-    float: none; } }
+    float: none !important;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
+  /* line 38, c:/portfolio/base/sass/components/_responsive.scss */
+  .cust_footer .cust_pant_div img {
+    width: 85%; }
+  /* line 41, c:/portfolio/base/sass/components/_responsive.scss */
+  .circle {
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 40em) and (orientation: landscape) {
+  /* line 47, c:/portfolio/base/sass/components/_responsive.scss */
+  .cust_tiger .img_container img {
+    width: 30%; }
+  /* line 50, c:/portfolio/base/sass/components/_responsive.scss */
+  .cust_footer .cust_pant_div img {
+    width: 55%; } }
 
 /*@end mobile*/
