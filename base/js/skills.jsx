@@ -3,9 +3,9 @@ var skillClass = require('./skill.js');
 
 var Skills = React.createClass({
 	componentDidMount: function(){
-		console.log( 'skill module was mounted on DOM' );
-		var test = new skillClass();
-		test.init();
+		//console.log( 'skill module was mounted on DOM' );
+		//var test = new skillClass();
+		//test.init();
 	},
 	render: function(){
 		return ( 

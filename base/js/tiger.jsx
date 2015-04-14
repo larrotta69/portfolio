@@ -7,7 +7,7 @@ var Tiger = React.createClass({
 	    if (window.innerWidth >= 600 ) {
 	        optionalElement = (
 	        	<figure className="img_container" data-anchor-target=".cust_tiger_div" data-start="top: 70px; left: 0%;" data-top-bottom="top: 10px; left: -88%;">
-					<img src="app/img/tigre_50.png"  data-anchor-target=".cust_tiger_div" data-start="width: 40%" data-top-bottom="width: 10%"/>	
+					<img src="app/img/tigre_50.png"  data-anchor-target=".cust_tiger_div" data-start="width: 35%" data-top-bottom="width: 10%"/>
 				</figure>
 			);
 	        

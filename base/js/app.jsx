@@ -7,6 +7,7 @@ var Divider = require('./divider.jsx');
 var Projects = require('./projects.jsx');
 var ProjectsMini = require('./mini.jsx');
 var Skills = require('./skills.jsx');
+var AnimatedSkills = require('./animatedskills.jsx');
 var Back = require('./back.jsx');
 
 var App = React.createClass({
@@ -38,6 +39,42 @@ var App = React.createClass({
 			{name: 'SASS'},
 			{name: 'React.js'}
 		];
+		var objSkillsEnhanced = [
+			{
+				name: 'JS',
+				list: [
+					{value: 'JavaScript'},
+					{value: 'Browserify'},
+					{value: 'PhoneGap'},
+					{value: 'AJAX'},
+					{value: 'Node.js'},
+					{value: 'Angular.js'},
+					{value: 'Gulp'},
+					{value: 'React.js'}
+				]
+			},
+			{
+				name: 'HTML5',
+				list: [
+					{value: 'HTML5'},
+					{value: 'Semantic'},
+					{value: 'HAML'},
+					{value: 'Jade'},
+					{value: 'Local Storage'}
+				]
+			},
+			{
+				name: 'CSS3',
+				list: [
+					{value: 'CSS3'},
+					{value: 'LESS'},
+					{value: 'SASS'},
+					{value: 'COMPASS'},
+					{value: 'Animation'}
+				]
+			}
+		];
+
 		return ( 
 			<div className="wrapper">
 				<Header />
@@ -53,6 +90,9 @@ var App = React.createClass({
 
 					<Divider text="Skills"/>
 					<Skills skills={objSkills}/>
+
+					<Divider text="Skills enhanced"/>
+					<AnimatedSkills skills={objSkillsEnhanced}/>
 
 					<Divider text="Back-end integration experience"/>
 					<Back techs={objBackTechs}/>

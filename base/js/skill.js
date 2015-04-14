@@ -19,6 +19,7 @@ Skill.prototype.isScrolledIntoView = function(elem){
 
 
 Skill.prototype.init = function(){
+
 	var self = this;
 
 	$(window).scroll(function () {
@@ -33,12 +34,42 @@ Skill.prototype.init = function(){
 			$(".cust_skill_7 .animation_cust_skills").velocity({ left: '95%' }, 1000);
 			$(".cust_skill_8 .animation_cust_skills").velocity({ left: '85%' }, 1000);
 		}
-			
-
 	});
-	
+
+
+	$('[data-type="modal-trigger"]').on('click', function() {
+	    var actionBtn = $(this);
+	    var modalbg = actionBtn.next('.cd-modal-bg');
+	    var modal = actionBtn.siblings('.cd-modal');
+	        
+	    actionBtn.toggleClass('to-circle');
+
+
+
+	    setTimeout(function(){
+	    	modalbg.addClass('visible');
+	    	modalbg.velocity({ scale: 18, backgroundColor: "#17B68E" }, 500, "easeInCubic" ,function() { 
+	    		modal.addClass('visible');
+	    	});
+	    }, 300);
+
+	    modal.siblings('.cd-modal-close').on('click', function(){
+	    	modal.removeClass('visible');
+	    	actionBtn.removeClass('to-circle');
+	    	modalbg.velocity({ scale: 1, backgroundColor: "#1de9b6" }, 1250, "easeOutExpo", function() { 
+	    		modalbg.removeClass('visible');
+	    		
+	    	});
+	    });
+	    
+	    
+	});	
+
 };
 module.exports = Skill;
+
+
+
 
 
 

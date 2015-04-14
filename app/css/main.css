@@ -1,62 +1,62 @@
-/* line 1, c:/portfolio/base/sass/components/_component.scss */
+/* line 1, c:/lab/portfolio/base/sass/components/_component.scss */
 body, .wrapper {
   overflow-x: hidden; }
 
-/* line 4, c:/portfolio/base/sass/components/_component.scss */
+/* line 4, c:/lab/portfolio/base/sass/components/_component.scss */
 .contain-to-grid {
-  background: #5E737D;
-  border-bottom: 5px solid #26967D;
+  background: #457183;
+  border-bottom: 5px solid #17B68E;
   z-index: 10;
   -webkit-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.25); }
-  /* line 11, c:/portfolio/base/sass/components/_component.scss */
+  /* line 11, c:/lab/portfolio/base/sass/components/_component.scss */
   .contain-to-grid .top-bar {
-    background: #5E737D; }
-    /* line 13, c:/portfolio/base/sass/components/_component.scss */
+    background: #457183; }
+    /* line 13, c:/lab/portfolio/base/sass/components/_component.scss */
     .contain-to-grid .top-bar .name h1 a {
       width: 100%; }
 
-/* line 19, c:/portfolio/base/sass/components/_component.scss */
+/* line 19, c:/lab/portfolio/base/sass/components/_component.scss */
 .text_white {
   color: white; }
 
-/* line 22, c:/portfolio/base/sass/components/_component.scss */
+/* line 22, c:/lab/portfolio/base/sass/components/_component.scss */
 .text_gray {
-  color: #5E737D; }
+  color: #457183; }
 
-/* line 25, c:/portfolio/base/sass/components/_component.scss */
+/* line 25, c:/lab/portfolio/base/sass/components/_component.scss */
 .text_gray_dark {
-  color: #222; }
+  color: #263238; }
 
-/* line 28, c:/portfolio/base/sass/components/_component.scss */
+/* line 28, c:/lab/portfolio/base/sass/components/_component.scss */
 .text_dark_green {
-  color: #26967D; }
+  color: #17B68E; }
 
-/* line 31, c:/portfolio/base/sass/components/_component.scss */
+/* line 31, c:/lab/portfolio/base/sass/components/_component.scss */
 .text_light_green {
-  color: #73FFE0; }
+  color: #64EDCB; }
 
-/* line 35, c:/portfolio/base/sass/components/_component.scss */
+/* line 35, c:/lab/portfolio/base/sass/components/_component.scss */
 .complete_width {
   max-width: initial;
   text-align: center; }
 
-/* line 41, c:/portfolio/base/sass/components/_component.scss */
+/* line 41, c:/lab/portfolio/base/sass/components/_component.scss */
 .circle {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: #5E737D;
+  background: #457183;
   margin: 0 auto;
-  border: 5px solid #73FFE0;
+  border: 5px solid #64EDCB;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-/* line 54, c:/portfolio/base/sass/components/_component.scss */
+/* line 54, c:/lab/portfolio/base/sass/components/_component.scss */
 .circle_mini {
-  background: #5E737D;
+  background: #457183;
   position: absolute;
   top: 3px;
   left: 3px;
@@ -65,96 +65,96 @@ body, .wrapper {
   border-radius: 50%;
   padding: 37px 0; }
 
-/* line 65, c:/portfolio/base/sass/components/_component.scss */
+/* line 65, c:/lab/portfolio/base/sass/components/_component.scss */
 .divider {
   margin-top: 30px;
   padding: 30px 0 0 0;
   margin-bottom: 20px; }
-  /* line 69, c:/portfolio/base/sass/components/_component.scss */
+  /* line 69, c:/lab/portfolio/base/sass/components/_component.scss */
   .divider h2 {
     line-height: 1.2;
     margin: 0;
-    color: #50e3c2; }
+    color: #1de9b6; }
 
-/* line 2, c:/portfolio/base/sass/components/_projects.scss */
+/* line 2, c:/lab/portfolio/base/sass/components/_projects.scss */
 .cust_miniproject h4 {
   line-height: 1;
   color: white;
   margin: 0; }
 
-/* line 2, c:/portfolio/base/sass/components/_tiger.scss */
+/* line 2, c:/lab/portfolio/base/sass/components/_tiger.scss */
 .cust_tiger {
-  background: #D4FDF4;
+  background: #CDF5EB;
   padding: 15px;
   position: relative;
   height: 60vh;
   display: flex;
   justify-content: center;
   align-items: flex-end; }
-  /* line 10, c:/portfolio/base/sass/components/_tiger.scss */
+  /* line 10, c:/lab/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger h2 {
     line-height: 1.2;
     margin: 0; }
-  /* line 15, c:/portfolio/base/sass/components/_tiger.scss */
+  /* line 15, c:/lab/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger .img_container {
     position: fixed;
     right: 0;
     z-index: 99;
     width: 100%;
     margin: 0 auto; }
-    /* line 21, c:/portfolio/base/sass/components/_tiger.scss */
+    /* line 21, c:/lab/portfolio/base/sass/components/_tiger.scss */
     .cust_tiger .img_container img {
       width: 40%; }
 
-/* line 26, c:/portfolio/base/sass/components/_tiger.scss */
+/* line 26, c:/lab/portfolio/base/sass/components/_tiger.scss */
 .cust_tiger_text {
-  background: #D4FDF4; }
-  /* line 28, c:/portfolio/base/sass/components/_tiger.scss */
+  background: #CDF5EB; }
+  /* line 28, c:/lab/portfolio/base/sass/components/_tiger.scss */
   .cust_tiger_text h2 {
     margin: 0; }
 
-/* line 1, c:/portfolio/base/sass/components/_footer.scss */
+/* line 1, c:/lab/portfolio/base/sass/components/_footer.scss */
 .cust_footer {
-  background: #5E737D;
-  border-top: 5px solid #26967D;
+  background: #457183;
+  border-top: 5px solid #17B68E;
   height: 2.8125rem;
   position: relative;
   margin-top: 70px; }
-  /* line 7, c:/portfolio/base/sass/components/_footer.scss */
+  /* line 7, c:/lab/portfolio/base/sass/components/_footer.scss */
   .cust_footer .social {
     list-style: none;
     overflow: hidden;
     margin: 0;
     padding: 5px 0; }
-    /* line 12, c:/portfolio/base/sass/components/_footer.scss */
+    /* line 12, c:/lab/portfolio/base/sass/components/_footer.scss */
     .cust_footer .social .social_item {
       float: left;
       margin-right: 10px; }
-      /* line 15, c:/portfolio/base/sass/components/_footer.scss */
+      /* line 15, c:/lab/portfolio/base/sass/components/_footer.scss */
       .cust_footer .social .social_item img {
         width: 30px; }
-      /* line 19, c:/portfolio/base/sass/components/_footer.scss */
+      /* line 19, c:/lab/portfolio/base/sass/components/_footer.scss */
       .cust_footer .social .social_item.behance img {
         width: 35px;
         margin-top: -3px; }
-  /* line 26, c:/portfolio/base/sass/components/_footer.scss */
+  /* line 26, c:/lab/portfolio/base/sass/components/_footer.scss */
   .cust_footer .cust_pant_div {
     position: absolute;
     bottom: 0px;
     right: 1px; }
-    /* line 30, c:/portfolio/base/sass/components/_footer.scss */
+    /* line 30, c:/lab/portfolio/base/sass/components/_footer.scss */
     .cust_footer .cust_pant_div img {
       width: 25%; }
 
-/* line 3, c:/portfolio/base/sass/components/_skills.scss */
+/* line 3, c:/lab/portfolio/base/sass/components/_skills.scss */
 .cust_skills > .column {
   padding: 0; }
-/* line 6, c:/portfolio/base/sass/components/_skills.scss */
+/* line 6, c:/lab/portfolio/base/sass/components/_skills.scss */
 .cust_skills .cust_skill {
   position: relative;
   border-bottom: 1px solid white;
-  background: #50e3c2; }
-  /* line 10, c:/portfolio/base/sass/components/_skills.scss */
+  background: #1de9b6; }
+  /* line 10, c:/lab/portfolio/base/sass/components/_skills.scss */
   .cust_skills .cust_skill .animation_cust_skills {
     position: absolute;
     left: 0;
@@ -162,12 +162,12 @@ body, .wrapper {
     top: 0;
     bottom: 0;
     background-color: white; }
-  /* line 18, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 18, c:/lab/portfolio/base/sass/components/_skills.scss */
   .cust_skills .cust_skill h4 {
     position: relative;
     color: white; }
 
-/* line 27, c:/portfolio/base/sass/components/_skills.scss */
+/* line 27, c:/lab/portfolio/base/sass/components/_skills.scss */
 .skills_grid .axis {
   width: 1px;
   border-right: 1px dashed #909090;
@@ -176,39 +176,39 @@ body, .wrapper {
   bottom: -5px;
   z-index: 9;
   opacity: 0.3; }
-  /* line 35, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 35, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis.axis_0 {
     left: 0; }
-    /* line 37, c:/portfolio/base/sass/components/_skills.scss */
+    /* line 37, c:/lab/portfolio/base/sass/components/_skills.scss */
     .skills_grid .axis.axis_0:after {
       content: '0%';
       left: 2px; }
-  /* line 42, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 42, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis.axis_1 {
     left: 25%; }
-    /* line 44, c:/portfolio/base/sass/components/_skills.scss */
+    /* line 44, c:/lab/portfolio/base/sass/components/_skills.scss */
     .skills_grid .axis.axis_1:after {
       content: '25%'; }
-  /* line 48, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 48, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis.axis_2 {
     left: 50%; }
-    /* line 50, c:/portfolio/base/sass/components/_skills.scss */
+    /* line 50, c:/lab/portfolio/base/sass/components/_skills.scss */
     .skills_grid .axis.axis_2:after {
       content: '50%'; }
-  /* line 54, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 54, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis.axis_3 {
     left: 75%; }
-    /* line 56, c:/portfolio/base/sass/components/_skills.scss */
+    /* line 56, c:/lab/portfolio/base/sass/components/_skills.scss */
     .skills_grid .axis.axis_3:after {
       content: '75%'; }
-  /* line 60, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 60, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis.axis_4 {
     left: 100%; }
-    /* line 62, c:/portfolio/base/sass/components/_skills.scss */
+    /* line 62, c:/lab/portfolio/base/sass/components/_skills.scss */
     .skills_grid .axis.axis_4:after {
       content: '100%';
       left: -28px; }
-  /* line 67, c:/portfolio/base/sass/components/_skills.scss */
+  /* line 67, c:/lab/portfolio/base/sass/components/_skills.scss */
   .skills_grid .axis:after {
     color: #909090;
     position: absolute;
@@ -216,52 +216,182 @@ body, .wrapper {
     top: -13px;
     font-size: 10px; }
 
+/* line 79, c:/lab/portfolio/base/sass/components/_skills.scss */
+.cust_animated_skills {
+  position: relative; }
+  /* line 81, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-section {
+    position: relative; }
+  /* line 85, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-action .btn {
+    width: 160px;
+    height: 160px;
+    background-color: #1de9b6;
+    border-radius: 5em;
+    transition: color 0.1s 0s, width 0.3s 0s, height 0.3s 0s, top 0.3s 0s;
+    cursor: pointer;
+    text-align: center;
+    padding: 25px;
+    line-height: 1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    font-size: 2.5rem;
+    padding: 0;
+    color: white; }
+  /* line 106, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-action .btn.to-circle {
+    width: 65px;
+    height: 65px;
+    color: transparent;
+    transition: color 0.1s 0s, width 0.3s 0s, height 0.3s 0s, top 0.3s 0s;
+    position: relative;
+    top: 47px; }
+  /* line 116, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -5em;
+    width: 10em;
+    height: 10em;
+    background-color: #1de9b6;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s 0.25s; }
+  /* line 129, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-bg.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+    transition: visibility 0s 0.25s; }
+  /* line 135, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-bg.visible.fixed {
+    position: fixed; }
+  /* line 139, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+    -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
+    transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s; }
+    /* line 152, c:/lab/portfolio/base/sass/components/_skills.scss */
+    .cust_animated_skills .cd-modal p {
+      color: white;
+      line-height: 1.2;
+      font-size: 3rem;
+      margin: 0; }
+      /* line 157, c:/lab/portfolio/base/sass/components/_skills.scss */
+      .cust_animated_skills .cd-modal p:first-child {
+        font-size: 5rem;
+        margin-bottom: 20px; }
+    /* line 162, c:/lab/portfolio/base/sass/components/_skills.scss */
+    .cust_animated_skills .cd-modal .cd-modal-content {
+      height: 100%;
+      width: 100%;
+      padding: 3em 5%;
+      text-align: left;
+      overflow-y: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    /* line 171, c:/lab/portfolio/base/sass/components/_skills.scss */
+    .cust_animated_skills .cd-modal.visible {
+      visibility: visible;
+      opacity: 1;
+      z-index: 999;
+      background: #17B68E; }
+  /* line 180, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .cd-modal-close {
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 5%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
+    z-index: 9999; }
+  /* line 203, c:/lab/portfolio/base/sass/components/_skills.scss */
+  .cust_animated_skills .visible + .cd-modal-close {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    background: red; }
+
 /*@group tablet*/
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 3, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 3, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger {
     height: 46vh; } }
 
 /*@end tablet*/
 /*@group mobile*/
 @media only screen and (max-width: 40em) {
-  /* line 11, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 11, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger {
     height: 45vh;
     align-items: center; }
-    /* line 14, c:/portfolio/base/sass/components/_responsive.scss */
+    /* line 14, c:/lab/portfolio/base/sass/components/_responsive.scss */
     .cust_tiger .img_container {
       top: 10px;
       position: relative;
       z-index: 1; }
-      /* line 18, c:/portfolio/base/sass/components/_responsive.scss */
+      /* line 18, c:/lab/portfolio/base/sass/components/_responsive.scss */
       .cust_tiger .img_container img {
         min-width: 20%;
         width: 80%; }
-  /* line 24, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 24, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger_text {
     padding-bottom: 30px; }
-  /* line 28, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 28, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .top-bar .name {
     height: 4.8125rem; }
-  /* line 31, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 31, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .top-bar .title-area {
     float: none !important;
     margin: 0 auto;
     width: 100%;
     text-align: center; }
-  /* line 38, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 38, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_footer .cust_pant_div img {
     width: 85%; }
-  /* line 41, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 41, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .circle {
     margin-bottom: 20px; } }
 
 @media only screen and (max-width: 40em) and (orientation: landscape) {
-  /* line 47, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 47, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_tiger .img_container img {
     width: 30%; }
-  /* line 50, c:/portfolio/base/sass/components/_responsive.scss */
+  /* line 50, c:/lab/portfolio/base/sass/components/_responsive.scss */
   .cust_footer .cust_pant_div img {
     width: 55%; } }
 
