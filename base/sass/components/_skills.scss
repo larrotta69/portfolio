@@ -146,7 +146,7 @@
 		height: 100%;
 		visibility: hidden;
 		opacity: 0;
-		pointer-events: none;
+		
 		-webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
 		-moz-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
 		transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;

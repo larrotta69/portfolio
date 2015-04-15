@@ -21,6 +21,7 @@ var Projects = React.createClass({
 								<h2>{content.name}</h2>
 								<h4>Project:</h4>
 								<p>{content.info}</p>
+								<p>{content.infoDos}</p>
 							</div>
 
 						</article>

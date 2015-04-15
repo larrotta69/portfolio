@@ -13,9 +13,9 @@ var Back = require('./back.jsx');
 var App = React.createClass({
 	render: function(){
 		var objProjects = [
-			{name: 'Casa Editorial El Tiempo', info: 'I worked in the redesign of its desktop website and the creation of the WebApp for mobile and tablet devices. We invest a lot of effort in cross-browsing and cross-device because it is a high consumer product in my country.', img: 'apptiempo.jpg'},
-			{name: 'Chevrolet', info: 'These were a set of web and mobile applications to improve the process of buying and selling cars at the Salón Internacional Del Automóvil 2014. I performed real-time applications for services as catalogs, interactive videos, customer communication with sellers, notifications for journalists, data reporting dashboard  and interaction with social networks. Technologies such as Node.js, Socket.io, Angular.js and PhoneGap were used.', img: 'appchevrolet.jpg'},
-			{name: 'Odontocitas', info: 'Odontocitas.com is a responsive web application to schedule dental appointments for users. It also serves as a control tool and medical history, reminders for users, billing and customer management to the dentists. It use technologies such as Ruby on Rails, Backbone.js and SASS.', img: 'appodontocitas.jpg'}
+			{name: 'Casa Editorial El Tiempo', info: 'I worked on the redesign of its desktop website and the creation of the WebApp for mobile and tablet devices.', infoDos: 'We invest a lot of effort in cross-browsing and cross-device because it is a high consumer product in my country.', img: 'apptiempo.jpg'},
+			{name: 'Chevrolet', info: 'These were a set of web and mobile applications to improve the process of buying and selling cars at the Salón Internacional Del Automóvil 2014.', infoDos: ' I performed real-time applications for services as catalogs, interactive videos, customer communication with sellers, notifications for journalists, data reporting dashboard  and interaction with social networks. Technologies such as Node.js, Socket.io, Angular.js and PhoneGap were used.', img: 'appchevrolet.jpg'},
+			{name: 'Odontocitas', info: 'Odontocitas.com is a responsive web application to schedule dental appointments for users. It also serves as a control tool and medical history, reminders for users, billing and customer management to the dentists.', infoDos: ' It use technologies such as Ruby on Rails, Backbone.js and SASS.', img: 'appodontocitas.jpg'}
 		];
 		var objMiniProjects = [
 			{name: 'Educlic.com', img: 'educlic.jpg'},
@@ -45,13 +45,16 @@ var App = React.createClass({
 				name: 'JS',
 				list: [
 					{value: 'JavaScript'},
+					{value: 'JQuery'},
+					{value: 'AJAX'},
+					{value: 'JSON'},
 					{value: 'Browserify'},
 					{value: 'PhoneGap'},
-					{value: 'AJAX'},
-					{value: 'Node.js'},
-					{value: 'Angular.js'},
+					{value: 'ReactJS'},
+					{value: 'NodeJS'},
+					{value: 'AngularJS'},
 					{value: 'Gulp'},
-					{value: 'React.js'}
+					{value: 'Grunt'}
 				]
 			},
 			{
@@ -61,6 +64,8 @@ var App = React.createClass({
 					{value: 'Semantic'},
 					{value: 'HAML'},
 					{value: 'Jade'},
+					{value: 'ZURB Foundation'},
+					{value: 'Twitter Bootstrap'},
 					{value: 'Local Storage'}
 				]
 			},
@@ -68,8 +73,8 @@ var App = React.createClass({
 				name: 'CSS3',
 				list: [
 					{value: 'CSS3'},
-					{value: 'LESS'},
 					{value: 'SASS'},
+					{value: 'LESS'},
 					{value: 'COMPASS'},
 					{value: 'Animation'}
 				]

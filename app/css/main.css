@@ -81,23 +81,24 @@ body, .wrapper {
     margin: 0;
     color: #1de9b6; }
 
-@-webkit-keyframes clickMe {
-  /* line 82, c:/lab/portfolio/base/sass/components/_component.scss */
-  0% {
-    box-shadow: inset 0px 0px 0px 0px #518399; }
+@media only screen and (min-width: 64.063em) {
+  @-webkit-keyframes clickMe {
+    /* line 81, c:/lab/portfolio/base/sass/components/_component.scss */
+    0% {
+      box-shadow: inset 0px 0px 0px 0px #518399; }
 
-  /* line 83, c:/lab/portfolio/base/sass/components/_component.scss */
-  50% {
-    box-shadow: inset 0px 0px 80px 28px #518399; }
+    /* line 82, c:/lab/portfolio/base/sass/components/_component.scss */
+    50% {
+      box-shadow: inset 0px 0px 80px 28px #518399; }
 
-  /* line 84, c:/lab/portfolio/base/sass/components/_component.scss */
-  100% {
-    box-shadow: inset 0px 0px 0px 0px #518399; } }
+    /* line 83, c:/lab/portfolio/base/sass/components/_component.scss */
+    100% {
+      box-shadow: inset 0px 0px 0px 0px #518399; } }
 
-/* line 87, c:/lab/portfolio/base/sass/components/_component.scss */
-body .cust_animated_skills .cd-modal-action .btn {
-  -webkit-animation: clickMe 2s infinite;
-  /* Safari 4+ */ }
+  /* line 86, c:/lab/portfolio/base/sass/components/_component.scss */
+  body .cust_animated_skills .cd-modal-action .btn {
+    -webkit-animation: clickMe 2s infinite;
+    /* Safari 4+ */ } }
 
 /* line 2, c:/lab/portfolio/base/sass/components/_projects.scss */
 .cust_miniproject h4 {
@@ -314,7 +315,6 @@ body .cust_animated_skills .cd-modal-action .btn {
     height: 100%;
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
     -webkit-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
     -moz-transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s;
     transition: visibility 0s 0.3s, opacity 0.3s 0s, z-index 0s 0.3s; }

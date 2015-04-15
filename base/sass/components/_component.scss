@@ -76,20 +76,14 @@ body, .wrapper{
 		color: $emerald_green_base;
 	}
 }
+@media only screen and (min-width: 64.063em) {
+	@-webkit-keyframes clickMe {
+	  0%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
+	  50% { box-shadow: inset 0px 0px 80px 28px rgba(81,131,153,1); }
+	  100%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
+	}
 
-
-@-webkit-keyframes clickMe {
-  0%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
-  50% { box-shadow: inset 0px 0px 80px 28px rgba(81,131,153,1); }
-  100%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
-}
-
-body .cust_animated_skills .cd-modal-action .btn {
-  -webkit-animation: clickMe 2s infinite; /* Safari 4+ */
-  
-  
-}
-
-
-
-
+	body .cust_animated_skills .cd-modal-action .btn {
+	  -webkit-animation: clickMe 2s infinite; /* Safari 4+ */
+	}
+ }
