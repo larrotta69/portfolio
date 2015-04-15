@@ -31,8 +31,8 @@ var Tiger = React.createClass({
 					
 				</section>
 				<div className="cust_tiger_text text-center">
-					<h2 className="text_gray_dark"><strong>Lorem Ipsum</strong></h2>
-					<h2 className="text_gray_dark"><strong>Lorem Ipsum Lorem Ipsum</strong></h2>
+					<h2 className="text_gray_dark"><strong>The painter has the Universe</strong></h2>
+					<h2 className="text_gray_dark"><strong>in his mind and hands.</strong></h2>
 				</div>
 			</div>
 		);

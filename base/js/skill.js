@@ -21,7 +21,7 @@ Skill.prototype.isScrolledIntoView = function(elem){
 Skill.prototype.init = function(){
 
 	var self = this;
-
+	/*
 	$(window).scroll(function () {
 		if (self.isScrolledIntoView('.cust_skill_0')){
 			$(".cust_skill_0 .animation_cust_skills").velocity({ left: '90%' }, 1000);
@@ -35,7 +35,15 @@ Skill.prototype.init = function(){
 			$(".cust_skill_8 .animation_cust_skills").velocity({ left: '85%' }, 1000);
 		}
 	});
-
+		$(window).scroll(function () {
+		if (self.isScrolledIntoView('.cust_animated_skills')){
+			$(".btn").addClass('animated');
+			setTimeout(function(){	
+				$(".btn").removeClass('animated');
+			}, 10000);
+		}
+	});
+	*/
 
 	$('[data-type="modal-trigger"]').on('click', function() {
 	    var actionBtn = $(this);
@@ -43,8 +51,6 @@ Skill.prototype.init = function(){
 	    var modal = actionBtn.siblings('.cd-modal');
 	        
 	    actionBtn.toggleClass('to-circle');
-
-
 
 	    setTimeout(function(){
 	    	modalbg.addClass('visible');
@@ -56,7 +62,7 @@ Skill.prototype.init = function(){
 	    modal.siblings('.cd-modal-close').on('click', function(){
 	    	modal.removeClass('visible');
 	    	actionBtn.removeClass('to-circle');
-	    	modalbg.velocity({ scale: 1, backgroundColor: "#1de9b6" }, 1250, "easeOutExpo", function() { 
+	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 1250, "easeOutExpo", function() { 
 	    		modalbg.removeClass('visible');
 	    		
 	    	});

@@ -62,20 +62,21 @@ var Back = require('./back.jsx');
 var App = React.createClass({displayName: "App",
 	render: function(){
 		var objProjects = [
-			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'apptiempo.jpg'},
-			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.', img: 'appchevrolet.jpg'}
+			{name: 'Casa Editorial El Tiempo', info: 'I worked in the redesign of its desktop website and the creation of the WebApp for mobile and tablet devices. We invest a lot of effort in cross-browsing and cross-device because it is a high consumer product in my country.', img: 'apptiempo.jpg'},
+			{name: 'Chevrolet', info: 'These were a set of web and mobile applications to improve the process of buying and selling cars at the Salón Internacional Del Automóvil 2014. I performed real-time applications for services as catalogs, interactive videos, customer communication with sellers, notifications for journalists, data reporting dashboard  and interaction with social networks. Technologies such as Node.js, Socket.io, Angular.js and PhoneGap were used.', img: 'appchevrolet.jpg'},
+			{name: 'Odontocitas', info: 'Odontocitas.com is a responsive web application to schedule dental appointments for users. It also serves as a control tool and medical history, reminders for users, billing and customer management to the dentists. It use technologies such as Ruby on Rails, Backbone.js and SASS.', img: 'appodontocitas.jpg'}
 		];
 		var objMiniProjects = [
-			{name: 'Project 1', info: 'Lorem ipsum dolor sit amet'},
-			{name: 'Project 2', info: 'Lorem ipsum dolor sit amet'},
-			{name: 'Project 3', info: 'Lorem ipsum dolor sit amet'},
-			{name: 'Project 4', info: 'Lorem ipsum dolor sit amet'}
+			{name: 'Educlic.com', img: 'educlic.jpg'},
+			{name: 'Colmedia.com', img: 'cmc.jpg'},
+			{name: 'Quientienemisdatos.com', img: 'misdatos.jpg'},
+			{name: 'Garnier.com', img: 'garnier.jpg'}
 		];
 		var objBackTechs = [
-			{name: 'RoR', info: 'Lorem ipsum dolor sit amet'},
-			{name: 'PHP', info: 'Lorem ipsum dolor sit amet'},
-			{name: 'Python', info: 'Lorem ipsum dolor sit amet'},
-			{name: '.NET', info: 'Lorem ipsum dolor sit amet'}
+			{name: 'Ruby', info: 'Rails Framework'},
+			{name: 'PHP', info: 'Drupal CMS, Wordpress CMS'},
+			{name: 'Python', info: 'Django Framework'},
+			{name: '.NET', info: 'SiteCore CMS'}
 		];
 		var objSkills = [
 			{name: 'HTML5'},
@@ -136,11 +137,12 @@ var App = React.createClass({displayName: "App",
 					React.createElement(Divider, {text: "Projects"}), 
 					React.createElement(Projects, {contents: objProjects}), 
 					React.createElement(ProjectsMini, {projects: objMiniProjects}), 
+					/*
+					<Divider text="Skills"/>
+					<Skills skills={objSkills}/>
+					*/
 
 					React.createElement(Divider, {text: "Skills"}), 
-					React.createElement(Skills, {skills: objSkills}), 
-
-					React.createElement(Divider, {text: "Skills enhanced"}), 
 					React.createElement(AnimatedSkills, {skills: objSkillsEnhanced}), 
 
 					React.createElement(Divider, {text: "Back-end integration experience"}), 
@@ -153,6 +155,8 @@ var App = React.createClass({displayName: "App",
 		);
 	}	
 });
+
+
 
 module.exports = App;
 
@@ -6422,20 +6426,16 @@ var Me = React.createClass({displayName: "Me",
 			React.createElement("section", {className: "row cust_me"}, 
 				React.createElement("div", {className: "column medium-6 text-left"}, 
 					React.createElement("p", null, 
-						"Lorem ipsum dolor sit amet," + ' ' + 
-						"consectetuer adipiscing elit. Donec odio." + ' ' + 
-						"Quisque volutpat mattis eros." + ' ' + 
-						"Nullam malesuada erat ut turpis. Suspendisse urna nibh," + ' ' + 
-						"viverra non, semper suscipit, posuere a, pede."
+						"As a graduate of multimedia engineering and passionate guy about arts, science and technology I have been working as Front End developer (I think it combines the three disciplines).", 
+						React.createElement("br", null), React.createElement("br", null), "I am a prominent person in interpersonal relationships and ability to" + ' ' +
+						"leadership based on teamwork to achieve goals; loving for self-learning and commitment."
 					)
 				), 
 				React.createElement("div", {className: "column medium-6 text-left"}, 
 					React.createElement("p", null, 
-						"Lorem ipsum dolor sit amet," + ' ' + 
-						"consectetuer adipiscing elit. Donec odio." + ' ' + 
-						"Quisque volutpat mattis eros." + ' ' + 
-						"Nullam malesuada erat ut turpis. Suspendisse urna nibh," + ' ' + 
-						"viverra non, semper suscipit, posuere a, pede."
+						"I am from Bogotá but I am working for international clients and companies on Mobile and Web applications.", 
+						React.createElement("br", null), React.createElement("br", null), 
+						"I am able to provide solutions from engineering to solve problems that have great ideas using latest technologies like HTML5, CSS3 and the powerful JavaScript."
 					)
 				)
 			)
@@ -6444,6 +6444,8 @@ var Me = React.createClass({displayName: "Me",
 });
 
 module.exports = Me;
+
+
 
 
 
@@ -6462,8 +6464,9 @@ var MiniProjects = React.createClass({displayName: "MiniProjects",
 					return (
 						React.createElement("div", {className: "small-6 medium-3 column text-center", key: project.name}, 
 							React.createElement("div", {className: "circle"}, 
-								React.createElement("h4", null, "Text")
-							)
+								React.createElement("img", {src: "app/img/projects/"+project.img, alt: project.name})
+							), 
+							React.createElement("h4", null, project.name)
 						)
 					);
 				})
@@ -6491,13 +6494,13 @@ var Projects = React.createClass({displayName: "Projects",
 					return (
 						React.createElement("article", {className: "medium-12 column", key: content.name, "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
 
-							React.createElement("div", {className: "medium-8 column"}, 
+							React.createElement("div", {className: "medium-6 column text-center"}, 
 								React.createElement("figure", null, 
 									React.createElement("img", {className: "cust_project_img", src: "app/img/projects/"+content.img})
 								)
 							), 
 							
-							React.createElement("div", {className: "medium-4 column"}, 
+							React.createElement("div", {className: "medium-6 column"}, 
 								React.createElement("h4", null, "Client:"), 
 								React.createElement("h2", null, content.name), 
 								React.createElement("h4", null, "Project:"), 
@@ -6542,7 +6545,7 @@ Skill.prototype.isScrolledIntoView = function(elem){
 Skill.prototype.init = function(){
 
 	var self = this;
-
+	/*
 	$(window).scroll(function () {
 		if (self.isScrolledIntoView('.cust_skill_0')){
 			$(".cust_skill_0 .animation_cust_skills").velocity({ left: '90%' }, 1000);
@@ -6556,7 +6559,15 @@ Skill.prototype.init = function(){
 			$(".cust_skill_8 .animation_cust_skills").velocity({ left: '85%' }, 1000);
 		}
 	});
-
+		$(window).scroll(function () {
+		if (self.isScrolledIntoView('.cust_animated_skills')){
+			$(".btn").addClass('animated');
+			setTimeout(function(){	
+				$(".btn").removeClass('animated');
+			}, 10000);
+		}
+	});
+	*/
 
 	$('[data-type="modal-trigger"]').on('click', function() {
 	    var actionBtn = $(this);
@@ -6564,8 +6575,6 @@ Skill.prototype.init = function(){
 	    var modal = actionBtn.siblings('.cd-modal');
 	        
 	    actionBtn.toggleClass('to-circle');
-
-
 
 	    setTimeout(function(){
 	    	modalbg.addClass('visible');
@@ -6577,7 +6586,7 @@ Skill.prototype.init = function(){
 	    modal.siblings('.cd-modal-close').on('click', function(){
 	    	modal.removeClass('visible');
 	    	actionBtn.removeClass('to-circle');
-	    	modalbg.velocity({ scale: 1, backgroundColor: "#1de9b6" }, 1250, "easeOutExpo", function() { 
+	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 1250, "easeOutExpo", function() { 
 	    		modalbg.removeClass('visible');
 	    		
 	    	});
@@ -6675,8 +6684,8 @@ var Tiger = React.createClass({displayName: "Tiger",
 					
 				), 
 				React.createElement("div", {className: "cust_tiger_text text-center"}, 
-					React.createElement("h2", {className: "text_gray_dark"}, React.createElement("strong", null, "Lorem Ipsum")), 
-					React.createElement("h2", {className: "text_gray_dark"}, React.createElement("strong", null, "Lorem Ipsum Lorem Ipsum"))
+					React.createElement("h2", {className: "text_gray_dark"}, React.createElement("strong", null, "The painter has the Universe")), 
+					React.createElement("h2", {className: "text_gray_dark"}, React.createElement("strong", null, "in his mind and hands."))
 				)
 			)
 		);

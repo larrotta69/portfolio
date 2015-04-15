@@ -35,13 +35,36 @@
 			text-align: center;
 		}
 	}
-	.cust_footer .cust_pant_div img{
-		width: 85%;
+	.cust_miniproject{
+		margin-top: 40px;
+	}
+	.cust_footer{
+		margin-top: 80px;
+		.cust_pant_div img{
+			width: 60%;
+		}
 	}
 	.circle{
-		
 		margin-bottom: 20px;
 	}
+
+	.cust_animated_skills{
+		.cd-modal{
+			p{
+				font-size: 2rem;
+				&:first-child{
+					font-size: 3rem;
+				}		
+			}
+			.cd-modal-content{
+				padding-top: 5rem;
+			}
+		}
+		.cd-section{
+			min-height: 180px;
+		}
+	}
+
 }
 @media only screen and (max-width: 40em) and (orientation:landscape){
 	.cust_tiger .img_container img{
@@ -50,6 +73,7 @@
 	.cust_footer .cust_pant_div img{
 		width: 55%;
 	}
+
 }
 /*@end mobile*/
 

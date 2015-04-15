@@ -1,8 +1,16 @@
 .cust_miniproject{
 	h4{
 		line-height: 1;
-		color: white;
 		margin: 0;
-
+		margin-bottom: 30px;
+		margin-top: 15px;
+		text-transform: lowercase;
+		font-size: 1.2rem;
+		color: $gray;
+	}
+}
+.cust_project{
+	img{
+		width: 80%;
 	}
 }

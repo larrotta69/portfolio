@@ -1,5 +1,8 @@
 body, .wrapper{
 	overflow-x: hidden;
+	p{
+		margin-bottom: 0;
+	}
 }
 .contain-to-grid{
 	background:$gray;
@@ -37,18 +40,19 @@ body, .wrapper{
 	text-align: center;
 }
 
-
 .circle{
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	border-radius: 50%;
-	background: $gray;
 	margin: 0 auto;
-	border: 5px solid $emerald_green_light;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+	img{
+		border-radius: 50%;
+	}
 
 }
 .circle_mini{
@@ -72,5 +76,20 @@ body, .wrapper{
 		color: $emerald_green_base;
 	}
 }
+
+
+@-webkit-keyframes clickMe {
+  0%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
+  50% { box-shadow: inset 0px 0px 80px 28px rgba(81,131,153,1); }
+  100%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
+}
+
+body .cust_animated_skills .cd-modal-action .btn {
+  -webkit-animation: clickMe 2s infinite; /* Safari 4+ */
+  
+  
+}
+
+
 
 

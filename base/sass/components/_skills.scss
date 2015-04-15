@@ -81,11 +81,13 @@
 	.cd-section{
 		position: relative;
 	}
-	
+	.cd-modal-action{
+		margin-bottom: 20px;
+	}
 	.cd-modal-action .btn {
 		width: 160px;
 		height: 160px;
-		background-color: $emerald_green_base;
+		background-color: $gray;
 		border-radius: 5em;
 		transition: color 0.1s 0s, width 0.3s 0s, height 0.3s 0s, top 0.3s 0s;
 		
@@ -120,7 +122,7 @@
 		margin-left: -5em;
 		width: 10em;
 		height: 10em;
-		background-color: $emerald_green_base;
+		background-color: $gray;
 		border-radius: 50%;
 		opacity: 0;
 		visibility: hidden;
@@ -211,12 +213,9 @@
 		-ms-transform: scale(1);
 		-o-transform: scale(1);
 		transform: scale(1);
-		background: red;
+		background: $gray;
 	}
 }
-
-
-
 
 
 

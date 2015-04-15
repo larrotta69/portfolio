@@ -10,8 +10,9 @@ var MiniProjects = React.createClass({
 					return (
 						<div className="small-6 medium-3 column text-center" key={project.name}>
 							<div className="circle">
-								<h4>Text</h4>
+								<img src={"app/img/projects/"+project.img} alt={project.name}/>
 							</div>
+							<h4>{project.name}</h4>
 						</div>
 					);
 				})}
