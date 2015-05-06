@@ -52,6 +52,8 @@ body, .wrapper{
 
 	img{
 		border-radius: 50%;
+        height: 100%;
+        width: 100%;
 	}
 
 }
@@ -76,6 +78,8 @@ body, .wrapper{
 		color: $emerald_green_base;
 	}
 }
+
+    
 @media only screen and (min-width: 64.063em) {
 	@-webkit-keyframes clickMe {
 	  0%   { box-shadow: inset 0px 0px 0px 0px rgba(81,131,153,1); }
@@ -86,4 +90,9 @@ body, .wrapper{
 	body .cust_animated_skills .cd-modal-action .btn {
 	  -webkit-animation: clickMe 2s infinite; /* Safari 4+ */
 	}
+    .Chevrolet{
+        > .medium-6 {
+            float: right;
+        }
+    }
  }

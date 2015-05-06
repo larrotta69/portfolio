@@ -29,7 +29,7 @@ var AnimatedSkills = React.createClass({
 										
 									</div>
 								</div>
-								<a href="#0" className="cd-modal-close">Close</a>
+								<a href="#0" className="cd-modal-close">X</a>
 							</div>
 						</div>
 					);

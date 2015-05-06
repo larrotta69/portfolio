@@ -11,17 +11,17 @@ var AnimatedSkills = require('./animatedskills.jsx');
 var Back = require('./back.jsx');
 
 var App = React.createClass({
-	render: function(){
+	render: function () {
 		var objProjects = [
 			{name: 'Casa Editorial El Tiempo', info: 'I worked on the redesign of its desktop website and the creation of the WebApp for mobile and tablet devices.', infoDos: 'We invest a lot of effort in cross-browsing and cross-device because it is a high consumer product in my country.', img: 'apptiempo.jpg'},
 			{name: 'Chevrolet', info: 'These were a set of web and mobile applications to improve the process of buying and selling cars at the Salón Internacional Del Automóvil 2014.', infoDos: ' I performed real-time applications for services as catalogs, interactive videos, customer communication with sellers, notifications for journalists, data reporting dashboard  and interaction with social networks. Technologies such as Node.js, Socket.io, Angular.js and PhoneGap were used.', img: 'appchevrolet.jpg'},
 			{name: 'Odontocitas', info: 'Odontocitas.com is a responsive web application to schedule dental appointments for users. It also serves as a control tool and medical history, reminders for users, billing and customer management to the dentists.', infoDos: ' It use technologies such as Ruby on Rails, Backbone.js and SASS.', img: 'appodontocitas.jpg'}
 		];
 		var objMiniProjects = [
-			{name: 'Educlic.com', img: 'educlic.jpg'},
-			{name: 'Colmedia.com', img: 'cmc.jpg'},
-			{name: 'Quientienemisdatos.com', img: 'misdatos.jpg'},
-			{name: 'Garnier.com', img: 'garnier.jpg'}
+			{name: 'Educlic', img: 'educlic.jpg'},
+			{name: 'Colmedia', img: 'cmc.jpg'},
+			{name: 'Quientienemisdatos', img: 'misdatos.jpg'},
+			{name: 'Garnier', img: 'garnier.jpg'}
 		];
 		var objBackTechs = [
 			{name: 'Ruby', info: 'Rails Framework'},

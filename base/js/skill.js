@@ -54,7 +54,7 @@ Skill.prototype.init = function(){
 
 	    setTimeout(function(){
 	    	modalbg.addClass('visible');
-	    	modalbg.velocity({ scale: 18, backgroundColor: "#17B68E" }, 500, "easeInCubic" ,function() { 
+	    	modalbg.velocity({ scale: 18, backgroundColor: "#522745" }, 500, "easeInCubic" ,function() { 
 	    		modal.addClass('visible');
 	    		$('body').css('overflow','hidden');
 	    	});
@@ -63,7 +63,7 @@ Skill.prototype.init = function(){
 	    modal.siblings('.cd-modal-close').on('click', function(){
 	    	modal.removeClass('visible');
 	    	actionBtn.removeClass('to-circle');
-	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 1250, "easeOutExpo", function() { 
+	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 500, "easeOutExpo", function() { 
 	    		modalbg.removeClass('visible');
 	    		$('body').css('overflow','initial');
 	    	});

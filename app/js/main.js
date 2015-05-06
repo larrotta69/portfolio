@@ -30,7 +30,7 @@ var AnimatedSkills = React.createClass({displayName: "AnimatedSkills",
 										
 									)
 								), 
-								React.createElement("a", {href: "#0", className: "cd-modal-close"}, "Close")
+								React.createElement("a", {href: "#0", className: "cd-modal-close"}, "X")
 							)
 						)
 					);
@@ -60,17 +60,17 @@ var AnimatedSkills = require('./animatedskills.jsx');
 var Back = require('./back.jsx');
 
 var App = React.createClass({displayName: "App",
-	render: function(){
+	render: function () {
 		var objProjects = [
 			{name: 'Casa Editorial El Tiempo', info: 'I worked on the redesign of its desktop website and the creation of the WebApp for mobile and tablet devices.', infoDos: 'We invest a lot of effort in cross-browsing and cross-device because it is a high consumer product in my country.', img: 'apptiempo.jpg'},
 			{name: 'Chevrolet', info: 'These were a set of web and mobile applications to improve the process of buying and selling cars at the Salón Internacional Del Automóvil 2014.', infoDos: ' I performed real-time applications for services as catalogs, interactive videos, customer communication with sellers, notifications for journalists, data reporting dashboard  and interaction with social networks. Technologies such as Node.js, Socket.io, Angular.js and PhoneGap were used.', img: 'appchevrolet.jpg'},
 			{name: 'Odontocitas', info: 'Odontocitas.com is a responsive web application to schedule dental appointments for users. It also serves as a control tool and medical history, reminders for users, billing and customer management to the dentists.', infoDos: ' It use technologies such as Ruby on Rails, Backbone.js and SASS.', img: 'appodontocitas.jpg'}
 		];
 		var objMiniProjects = [
-			{name: 'Educlic.com', img: 'educlic.jpg'},
-			{name: 'Colmedia.com', img: 'cmc.jpg'},
-			{name: 'Quientienemisdatos.com', img: 'misdatos.jpg'},
-			{name: 'Garnier.com', img: 'garnier.jpg'}
+			{name: 'Educlic', img: 'educlic.jpg'},
+			{name: 'Colmedia', img: 'cmc.jpg'},
+			{name: 'Quientienemisdatos', img: 'misdatos.jpg'},
+			{name: 'Garnier', img: 'garnier.jpg'}
 		];
 		var objBackTechs = [
 			{name: 'Ruby', info: 'Rails Framework'},
@@ -206,6 +206,8 @@ var Divider = React.createClass({displayName: "Divider",
 });
 
 module.exports = Divider;
+
+
 
 
 
@@ -6497,7 +6499,7 @@ var Projects = React.createClass({displayName: "Projects",
 				this.props.contents.map(function(content){
 
 					return (
-						React.createElement("article", {className: "medium-12 column", key: content.name, "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
+						React.createElement("article", {className: "medium-12 column "+content.name, key: content.name, "data-sr": "enter bottom and move 50px and scale up 50% over 1.33s"}, 
 
 							React.createElement("div", {className: "medium-6 column text-center"}, 
 								React.createElement("figure", null, 
@@ -6584,7 +6586,7 @@ Skill.prototype.init = function(){
 
 	    setTimeout(function(){
 	    	modalbg.addClass('visible');
-	    	modalbg.velocity({ scale: 18, backgroundColor: "#17B68E" }, 500, "easeInCubic" ,function() { 
+	    	modalbg.velocity({ scale: 18, backgroundColor: "#522745" }, 500, "easeInCubic" ,function() { 
 	    		modal.addClass('visible');
 	    		$('body').css('overflow','hidden');
 	    	});
@@ -6593,7 +6595,7 @@ Skill.prototype.init = function(){
 	    modal.siblings('.cd-modal-close').on('click', function(){
 	    	modal.removeClass('visible');
 	    	actionBtn.removeClass('to-circle');
-	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 1250, "easeOutExpo", function() { 
+	    	modalbg.velocity({ scale: 1, backgroundColor: "#457183" }, 500, "easeOutExpo", function() { 
 	    		modalbg.removeClass('visible');
 	    		$('body').css('overflow','initial');
 	    	});

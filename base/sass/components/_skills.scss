@@ -174,7 +174,14 @@
 			visibility: visible;
 			opacity: 1;
 			z-index: 999;
-			background: $emerald_green_dark;
+            background: $magenta_dark;
+            background: -moz-linear-gradient(top,  $magenta_light 0%, $magenta_dark 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$magenta_light), color-stop(100%,$magenta_dark));
+            background: -webkit-linear-gradient(top,  $magenta_light 0%,$magenta_dark 100%);
+            background: -o-linear-gradient(top,  $magenta_light 0%,$magenta_dark 100%);
+            background: -ms-linear-gradient(top,  $magenta_light 0%,$magenta_dark 100%);
+            background: linear-gradient(to bottom,  $magenta_light 0%,$magenta_dark 100%);
+
 		}
 
 	}
@@ -183,12 +190,14 @@
 		position: fixed;
 		z-index: 1;
 		top: 20px;
-		right: 5%;
+		left: 5%;
 		height: 50px;
 		width: 50px;
 		border-radius: 50%;
 		overflow: hidden;
-		text-indent: 100%;
+        color: white;
+        padding: 19px;
+        line-height: 1;
 		white-space: nowrap;
 		visibility: hidden;
 		opacity: 0;

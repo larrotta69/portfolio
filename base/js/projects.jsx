@@ -8,7 +8,7 @@ var Projects = React.createClass({
 				{this.props.contents.map(function(content){
 
 					return (
-						<article className="medium-12 column" key={content.name}  data-sr='enter bottom and move 50px and scale up 50% over 1.33s'>
+						<article className={"medium-12 column "+content.name} key={content.name}  data-sr='enter bottom and move 50px and scale up 50% over 1.33s'>
 
 							<div className="medium-6 column text-center">
 								<figure>

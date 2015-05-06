@@ -57,9 +57,11 @@ body, .wrapper {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   /* line 53, c:/lab/portfolio/base/sass/components/_component.scss */
   .circle img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    height: 100%;
+    width: 100%; }
 
-/* line 58, c:/lab/portfolio/base/sass/components/_component.scss */
+/* line 60, c:/lab/portfolio/base/sass/components/_component.scss */
 .circle_mini {
   background: #457183;
   position: absolute;
@@ -70,12 +72,12 @@ body, .wrapper {
   border-radius: 50%;
   padding: 37px 0; }
 
-/* line 69, c:/lab/portfolio/base/sass/components/_component.scss */
+/* line 71, c:/lab/portfolio/base/sass/components/_component.scss */
 .divider {
   margin-top: 30px;
   padding: 30px 0 0 0;
   margin-bottom: 20px; }
-  /* line 73, c:/lab/portfolio/base/sass/components/_component.scss */
+  /* line 75, c:/lab/portfolio/base/sass/components/_component.scss */
   .divider h2 {
     line-height: 1.2;
     margin: 0;
@@ -83,22 +85,25 @@ body, .wrapper {
 
 @media only screen and (min-width: 64.063em) {
   @-webkit-keyframes clickMe {
-    /* line 81, c:/lab/portfolio/base/sass/components/_component.scss */
+    /* line 85, c:/lab/portfolio/base/sass/components/_component.scss */
     0% {
       box-shadow: inset 0px 0px 0px 0px #518399; }
 
-    /* line 82, c:/lab/portfolio/base/sass/components/_component.scss */
+    /* line 86, c:/lab/portfolio/base/sass/components/_component.scss */
     50% {
       box-shadow: inset 0px 0px 80px 28px #518399; }
 
-    /* line 83, c:/lab/portfolio/base/sass/components/_component.scss */
+    /* line 87, c:/lab/portfolio/base/sass/components/_component.scss */
     100% {
       box-shadow: inset 0px 0px 0px 0px #518399; } }
 
-  /* line 86, c:/lab/portfolio/base/sass/components/_component.scss */
+  /* line 90, c:/lab/portfolio/base/sass/components/_component.scss */
   body .cust_animated_skills .cd-modal-action .btn {
     -webkit-animation: clickMe 2s infinite;
-    /* Safari 4+ */ } }
+    /* Safari 4+ */ }
+  /* line 94, c:/lab/portfolio/base/sass/components/_component.scss */
+  .Chevrolet > .medium-6 {
+    float: right; } }
 
 /* line 2, c:/lab/portfolio/base/sass/components/_projects.scss */
 .cust_miniproject h4 {
@@ -342,18 +347,26 @@ body, .wrapper {
       visibility: visible;
       opacity: 1;
       z-index: 999;
-      background: #17B68E; }
-  /* line 182, c:/lab/portfolio/base/sass/components/_skills.scss */
+      background: #522745;
+      background: -moz-linear-gradient(top, #9E5B8A 0%, #522745 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9E5B8A), color-stop(100%, #522745));
+      background: -webkit-linear-gradient(top, #9E5B8A 0%, #522745 100%);
+      background: -o-linear-gradient(top, #9E5B8A 0%, #522745 100%);
+      background: -ms-linear-gradient(top, #9E5B8A 0%, #522745 100%);
+      background: linear-gradient(to bottom, #9E5B8A 0%, #522745 100%); }
+  /* line 189, c:/lab/portfolio/base/sass/components/_skills.scss */
   .cust_animated_skills .cd-modal-close {
     position: fixed;
     z-index: 1;
     top: 20px;
-    right: 5%;
+    left: 5%;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     overflow: hidden;
-    text-indent: 100%;
+    color: white;
+    padding: 19px;
+    line-height: 1;
     white-space: nowrap;
     visibility: hidden;
     opacity: 0;
@@ -366,7 +379,7 @@ body, .wrapper {
     -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
     transition: transform 0.3s 0s, visibility 0s 0.3s, opacity 0.3s 0s;
     z-index: 9999; }
-  /* line 205, c:/lab/portfolio/base/sass/components/_skills.scss */
+  /* line 214, c:/lab/portfolio/base/sass/components/_skills.scss */
   .cust_animated_skills .visible + .cd-modal-close {
     visibility: visible;
     opacity: 1;
