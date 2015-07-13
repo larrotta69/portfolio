@@ -43,4 +43,3 @@ gulp.task('todo', function(){
 });
 
 gulp.task('default', ['styles', 'template']);
-		
