@@ -74,7 +74,7 @@ var App = React.createClass({displayName: "App",
             {name: 'Chevrolet', img: 'chevrolet.jpg'},
             {name: 'Garnier', img: 'garnier.jpg'},
             {name: 'Educlic', img: 'educlic.jpg'},
-            {name: 'Odontocitas', img: 'Odontocitas.png'},
+            {name: 'Odontocitas', img: 'odontocitas.png'},
 			{name: 'Colmedia', img: 'cmc.jpg'},
 			{name: 'Quientienemisdatos', img: 'misdatos.jpg'},
             {name: 'Summa', img: 'summa.png'}
