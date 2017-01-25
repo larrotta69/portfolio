@@ -1,4 +1,6 @@
 .cust_miniproject{
+    margin-top: 30px;
+
 	h4{
 		line-height: 1;
 		margin: 0;
@@ -8,9 +10,25 @@
 		font-size: 1.2rem;
 		color: $gray;
 	}
+
+	.cust_miniproject_item {
+		display: inline-block;
+		width: 25%;
+	}
 }
+
 .cust_project{
 	img{
 		width: 80%;
 	}
+}
+
+article.medium-12:nth-of-type(even) > div {
+    float: right !important;
+
+
+}
+
+[class*="column"]+[class*="column"]:last-child {
+    float: left;
 }

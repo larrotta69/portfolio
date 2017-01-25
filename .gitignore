@@ -1,2 +1,20 @@
 # node module for task automator
 node_modules/
+
+# git
+*.orig
+
+# node.js
+node_modules/
+npm-debug.log
+
+# Mac system files
+.DS_Store
+
+# sass
+.sach-cache/
+
+# editor files
+.idea
+.vscode/
+jsconfig.json

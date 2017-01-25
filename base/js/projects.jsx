@@ -2,9 +2,9 @@ var React = require('react');
 
 var Projects = React.createClass({
 	render: function(){
-		
+
 		return (
-			<section className="row cust_project"> 
+			<section className="row cust_project">
 				{this.props.contents.map(function(content){
 
 					return (
@@ -15,13 +15,9 @@ var Projects = React.createClass({
 									<img className="cust_project_img" src={"app/img/projects/"+content.img}/>
 								</figure>
 							</div>
-							
-							<div className="medium-6 column">
-								<h4>Client:</h4>
+
+							<div className="medium-4 column">
 								<h2>{content.name}</h2>
-								<h4>Project:</h4>
-								<p>{content.info}</p>
-								<p>{content.infoDos}</p>
 							</div>
 
 						</article>
@@ -29,10 +25,7 @@ var Projects = React.createClass({
 				})}
 			</section>
 		);
-	}	
+	}
 });
 
 module.exports = Projects;
-
-
-

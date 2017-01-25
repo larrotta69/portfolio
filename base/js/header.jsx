@@ -2,13 +2,13 @@ var React = require('react');
 
 var Header = React.createClass({
 	render: function(){
-		return ( 
+		return (
 			<header className="contain-to-grid sticky cust_header">
 				<nav className="top-bar" data-topbar>
 					<ul className="left">
 						<li>
 							{/*
-							<figure>	
+							<figure>
 								 <img src="" alt="logo front end tiger" />
 							</figure>
 							*/}
@@ -18,7 +18,7 @@ var Header = React.createClass({
 						<li className="name">
 							<hgroup >
 								<h1 className="site-title">
-									<a href="#"><strong>Daniel Larrotta</strong> Front End developer</a>
+									<a href="#"><strong>Daniel Larrotta</strong> Web Engineer <small>Front End developer</small></a>
 								</h1>
 							</hgroup>
 							{/*
@@ -29,24 +29,24 @@ var Header = React.createClass({
 									</h1>
 								</hgroup>
 							</div>
-							
+
 							<div className="large-4 small-3 columns">
 								<div className="switch">
 									<input id="availableCheckboxSwitch" type="checkbox" disabled value="1" />
 									<label for="availableCheckboxSwitch"></label>
-								</div> 
-							</div> 
+								</div>
+							</div>
 							*/}
 						</li>
-						
+
 					</ul>
 				</nav>
 
 			</header>
 
-			
+
 		);
-	}	
+	}
 });
 
 module.exports = Header;

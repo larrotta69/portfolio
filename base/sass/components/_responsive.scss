@@ -3,18 +3,24 @@
 	.cust_tiger{
 		height: 46vh;
 	}
+
 }
 /*@end tablet*/
 
 /*@group mobile*/
 @media only screen and (max-width: 40em) {
+	.cust_miniproject{
+    	.cust_miniproject_item {
+    		width: 50%;
+    	}
+    }
 	.cust_tiger{
 		height: 45vh;
 		align-items: center;
 		.img_container{
 			top: 10px;
 			position: relative;
-			z-index: 1;			
+			z-index: 1;
 			img{
 				min-width: 20%;
 				width: 80%;
@@ -29,7 +35,7 @@
 			height: 4.8125rem;
 		}
 		.title-area{
-			float: none !important;		
+			float: none !important;
 			margin: 0 auto;
 			width: 100%;
 			text-align: center;
@@ -54,7 +60,7 @@
 				font-size: 2rem;
 				&:first-child{
 					font-size: 3rem;
-				}		
+				}
 			}
 			.cd-modal-content{
 				padding-top: 5rem;
@@ -76,4 +82,3 @@
 
 }
 /*@end mobile*/
-

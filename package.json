@@ -16,7 +16,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-if": "^1.2.5",
     "gulp-minify-css": "^1.0.0",
-    "gulp-sass": "^1.3.3",
+    "gulp-sass": "^2.3.2",
     "gulp-webserver": "^0.9.0",
     "jquery-browserify": "^1.8.1"
   },
