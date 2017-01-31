@@ -259,19 +259,19 @@ var React = require('react');
 
 var Footer = React.createClass({displayName: "Footer",
 	render: function(){
-		return ( 
+		return (
 			React.createElement("footer", {className: "cust_footer"}, 
 
 				React.createElement("div", {className: "column small-6 text-center"}, 
 					React.createElement("ul", {className: "social no-bullet"}, 
 
-						React.createElement("li", {className: "social_item link"}, 	
+						React.createElement("li", {className: "social_item link"}, 
 							React.createElement("a", {href: "https://www.linkedin.com/in/larrotta69", target: "_blank"}, 
 								React.createElement("img", {src: "app/img/linkedin.svg"})
 							)
 						), 
 						React.createElement("li", {className: "social_item behance"}, 
-							React.createElement("a", {href: "https://www.behance.net/larrotta", target: "_blank"}, 
+							React.createElement("a", {href: "https://www.behance.net/", target: "_blank"}, 
 								React.createElement("img", {src: "app/img/behance.svg"})
 							)
 						), 
@@ -283,18 +283,16 @@ var Footer = React.createClass({displayName: "Footer",
 
 					)
 				), 
-				React.createElement("div", {className: "column small-6 text-right cust_pant_div"}, 	
-					React.createElement("img", {src: "app/img/pantera-small.png"})	
+				React.createElement("div", {className: "column small-6 text-right cust_pant_div"}, 
+					React.createElement("img", {src: "app/img/pantera-small.png"})
 				)
 
 			)
 		);
-	}	
+	}
 });
 
 module.exports = Footer;
-
-
 
 
 },{"react":174}],7:[function(require,module,exports){
